@@ -1,0 +1,2676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationary</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    
+
+       <style>
+
+
+body{
+
+   background-color: rgb(251, 236, 219);
+}
+
+ 
+   .navbar{
+
+
+      background-color:rgb(243, 218, 187);
+      display: flex;
+      justify-content: end;
+      padding: 23px;
+      size: 10px;
+      height: 15vh;      
+   }
+
+   .navimg{
+
+      box-shadow: 24px 6px 28px rgb(202, 161, 132);
+      border-radius: 7px;
+   }
+
+
+   .dropdownnav{
+
+      color: rgb(116, 92, 29);
+   }
+
+   .dropdownnav:hover{
+
+color: rgb(112, 89, 30);
+}
+
+   .dropdown-menu{
+      border: none;
+      background-color: rgb(237, 219, 173);
+      filter: brightness(0.9);
+   
+   }
+
+   .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; 
+        }
+
+
+    .dropdown-items{
+
+       color: rgb(236, 236, 235); 
+    }    
+
+
+   .navbar-nav{
+      /* padding-left: 15px; */
+      background-color:rgb(243, 218, 187);
+      margin-left: 3vw;
+      /* gap: -2px; */
+   
+   }
+
+   .nav-item{
+
+      color: black;
+      font-family: 'kanit';
+      font-size: 20px;
+      gap: none;
+      
+   }
+
+  
+   
+   
+
+   .a{
+
+      color: black;
+   }
+
+   .btn-b{
+
+color: rgb(101, 70, 15);
+/* background-color: rgb(119, 80, 22); */
+width: 4vw;
+height: 5vh;
+box-shadow: 2px 4px 7px rgb(130, 95, 6);
+
+}
+
+
+                                         /* CANVAS */
+
+
+
+
+.offcanvas{
+
+   background: linear-gradient(to left, rgb(230, 193, 149), rgb(243, 218, 187),rgb(218, 183, 140));
+   font-family: 'Cinzel';
+
+}
+
+
+
+                                    /* UNIVERSAL STATIONARY */
+
+
+.SS{
+
+background:linear-gradient(to bottom, rgb(202, 146, 73), rgb(129, 81, 19), rgb(196, 149, 88), rgb(105, 66, 14) );
+height: 90vh;
+margin-top: -17vh;
+
+}
+
+.btnUS{
+
+   margin: 0 41%;
+   /* background: linear-gradient(to right, rgb(147, 91, 19), rgb(235, 182, 113)); */
+   background-color: bisque;
+   border: none;
+   height: 8vh;
+   width: 10vw;
+   margin-top: 2vh;
+   font-weight: 600;
+}
+
+
+
+
+   .sec1{
+
+       margin-top: 15vh;
+   }
+
+   
+
+   .h2{
+
+      font-family: 'kanit';
+      font-size: 10px;
+   }
+
+  
+   .card{
+
+      border: none;
+   background-color: rgb(220, 171, 111);
+   }
+
+     .cardimg{
+      transition: transform 0.4s ease ;
+      box-shadow: 2px 3px 7px black;
+     }
+
+     .cardimg:hover{
+
+         transform:  scale(1.1) ;
+         cursor: pointer;
+     }
+
+     .Cimg2:hover{
+
+        cursor: pointer;
+     }
+
+
+
+                             /* Features collection */
+
+
+.sec2{
+
+    margin-top: 40px;
+    row-gap: 40px;
+}
+  
+#effect-text {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #effect-text:hover .image {
+    opacity: 0.3;
+  }
+  
+  #effect-text:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    /* background-color: #04AA6D; */
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    padding: 16px 32px;
+  }
+
+  .featuredh2{
+
+     margin-top: -40px;
+     font-size: 23px;
+  }
+
+  .card{
+
+    font-family: 'kanit';
+    text-align: center;
+    
+  }
+
+  .card-hover{
+
+     border: 1px solid black;
+      
+  }
+
+ 
+ .CCimg{
+
+    transition: transform 0.7s ease;
+
+ }
+
+ .CCimg:hover{
+
+     transform: scale( 1.1);
+
+   }
+
+   .CCcard{
+
+       border: none;
+   }
+
+   
+
+   /* .btn-C {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+  transition: all 1000ms;
+  font-size: 13px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid rgb(223, 150, 150);
+  background-color: rgb(239, 156, 156);
+}
+
+.btn-C:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid red;
+  box-shadow: 4px 5px 17px -4px rgb(191, 88, 88);
+}
+
+.btn-C:before {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: red;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.btn-C:hover::before {
+  width: 250%;
+} */
+
+
+.btn-C {
+  height: 47px;
+  width: 150px;
+  border: none;
+  font-family: 'kanit';
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border: 0px solid chocolate;
+  
+}
+
+.btn-C:hover {
+  box-shadow: .5px .6px 30px rgb(207, 131, 76);
+}
+
+.btn-C::after {
+  content: "Add to Cart";
+  height: 47px;
+  width: 150px;
+  background-color:rgb(120, 60, 17);
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.0rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-C::before {
+
+  content: 'CART';
+  height: 50px;
+  width: 150px;
+  background-color: rgb(235, 177, 136);
+  background: linear-gradient(to bottom, rgb(199, 113, 51), rgb(254, 212, 182), rgb(208, 117, 53) );
+  font-size: 24px;
+  color:white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-C:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.btn-C:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+/* universal */
+
+.btnUS {
+  height: 47px;
+  width: 150px;
+  border: none;
+  font-family: 'kanit';
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border: 0px solid chocolate;
+  
+}
+
+.btnUS:hover {
+  box-shadow: .5px .6px 30px rgb(207, 131, 76);
+}
+
+.btnUS::after {
+  content: "Add to Cart";
+  height: 47px;
+  width: 150px;
+  background-color:rgb(120, 60, 17);
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.0rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btnUS::before {
+
+  content: 'Learn More';
+  height: 50px;
+  width: 150px;
+  background-color: rgb(235, 177, 136);
+  background: linear-gradient(to bottom, rgb(199, 113, 51), rgb(254, 212, 182), rgb(208, 117, 53) );
+  font-size: 24px;
+  color:black;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btnUS:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.btnUS:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+                                         /* Buttons & simple card carousel */
+
+
+    .card-group{
+
+        margin-left: -4px;
+       width: 260px;   
+    }
+
+    
+    .Crow{
+
+        width: 120vw;
+        margin-left: -40px;
+    }
+
+    .btn-prev{
+
+      top: 50%;
+       margin-left: 24vw;
+       border-radius: 50%;
+       background-color:chocolate;
+      height: 8vh;
+      width: 4vw;
+      transition: transform 0.8s ease;
+    }
+
+    .btn-prev:hover{
+
+       transform: scale(1.4);
+       cursor: pointer;
+    }
+
+    .btn-next{
+
+       top: 50%;
+       margin-left: 24vw;
+       border-radius: 50%;
+       height: 8vh;
+       width: 4vw;
+       background-color:chocolate;
+       transition: transform 0.8s ease;
+   }
+
+   .btn-next:hover{
+
+    transform: scale(1.4);
+    cursor: pointer;
+} 
+
+.card:hover{
+
+   cursor: pointer;
+}
+
+
+
+
+
+                                     /* Explore our latest brands */
+
+
+
+ 
+ 
+ .h2{
+
+font-family: 'kanit';
+font-size: 21px;
+font-weight: 400;
+}
+
+#card{
+    /* height: 40px; */
+    border: 1px solid black;  
+  }
+
+ .btn1-prev{
+
+      top: 47%;
+       margin-left: 0.1vw;
+       border-radius: 50%;
+       background-color:chocolate;
+      height: 8vh;
+      width: 4vw;
+      transition: transform 0.8s ease;
+ }
+
+ .btn1-prev:hover{
+
+    transform: scale(1.4);
+    cursor: pointer;
+ }
+
+ .btn1-next{
+
+       top: 47%;
+       margin-left: 24vw;
+       border-radius: 50%;
+       height: 8vh;
+       width: 4vw;
+       background-color:chocolate;
+       transition: transform 0.8s ease;
+}
+
+.btn1-next:hover{
+
+transform: scale(1.4);
+cursor: pointer;
+}
+
+.rowexplore{
+   
+   margin-left: -11px;
+}
+
+
+                                    
+
+                                        /* OUR Latest News & Blogs  */
+
+
+
+   .Bcimg{
+
+       transition: transform 0.8s ease;
+   }   
+   
+   .Bcimg:hover{
+
+     transform: scale(1.1);
+     cursor: pointer;
+   } 
+
+
+
+
+                                       /* <!-- Visit our site (MAP) */
+
+                                          #div1 {
+            height: 60vh;
+            width: 49vw;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+                                          /* Footer */
+
+
+
+
+
+.FooterSopify{
+
+  color: white;
+  margin-top: -8px;
+}                                          
+
+.FooterSopify:hover{
+
+   color: red;
+   transition: 0.6s ease;
+} 
+
+.Footercol1{
+
+   color: white;
+}
+
+.Footercol1:hover{
+
+color: white;
+cursor: pointer;
+}
+
+.Footercol2:hover{
+
+   cursor: pointer;
+}
+
+.Footercol3:hover{
+
+cursor: pointer;
+}
+
+.Footericons{
+
+   margin-left: 70vw;
+   margin-top: -25vh;
+   
+  
+}
+                                           
+.FooterLiIcons{
+
+  height: 10vh;
+  width: 10vw;
+} 
+
+.Fli{
+
+   transition: transform 0.9s ease;
+}
+
+.Fli:hover{
+
+   transform: scale(1.3);
+}
+
+
+                                         
+                                                                             
+
+
+                                                           /* FEATURES COLLECTION MODAL */
+
+
+
+
+.Fmodalbtn{
+
+   margin-left: 160PX;
+}                                                           
+
+
+
+       </style>
+
+
+
+
+<nav class="navbar navbar-expand-lg fixed-top">
+ 
+   <div class="container-fluid">
+
+     <a href="index.html" class="navbar-brand"> <img class="navimg" style="height: 70px; width: 230px;" src="../Images/Stationary logo.png" alt=""> </a>
+
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-menu" >
+
+         <span class="">
+            <img style="width: 30px; height: 30px; display: inline-block;" src="../Images/nav icon.png" alt="">
+         </span>
+
+      </button>
+
+    <div class="collapse navbar-collapse" id="nav-menu">
+
+       <ul class="navbar-nav">
+
+        <li class="nav-item">
+
+          <!-- dropdown 1 -->
+        <div class="dropdown">
+              
+            <a style="font-size: 19px;" class="nav-link dropdown-toggle dropdownnav" target="_blank" href="./Office Supplies.html"><i>Office Supplies</i></a>
+
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Ball Piont</a>
+                    <a class="dropdown-item" href="#">Binger Clips</a>
+                    <a class="dropdown-item" href="#">Calculator</a>
+                    <a class="dropdown-item" href="#">Office Dairy</a>
+                    <a class="dropdown-item" href="#">Office Equipment</a>
+                    <a class="dropdown-item" href="#">Scissor</a>
+                    <a class="dropdown-item" href="#">Rubber Band</a>
+                    <a class="dropdown-item" href="#">Sticky Notes</a>
+                    <a class="dropdown-item" href="#">Pen Stand</a>
+                </div>
+            </div>      
+        </li>
+         <!-- dropdown 2 -->
+         
+            <div class="dropdown">
+              
+            <a  href="School Supplies.html" class="nav-link dropdown-toggle dropdownnav" target="_blank" style="font-size: 18px; font-weight: 500;"><i>School Supplies</i> </a>
+
+    <!-- <a href="./School Supplies.html">ha</a> -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Black Boards</a>
+                    <a class="dropdown-item" href="#">Clipboard</a>
+                    <a class="dropdown-item" href="#">Chart Papers</a>
+                    <a class="dropdown-item" href="#">cards Flash</a>
+                    <a class="dropdown-item" href="#"> Fluide & Ink Remover</a>
+                    <a class="dropdown-item" href="#"> Glues</a>
+                    <a class="dropdown-item" href="#"> Inks</a>
+                    <a class="dropdown-item" href="#">Notebooks</a>
+                    <a class="dropdown-item" href="#"> Paper Sheets</a>
+                    <a class="dropdown-item" href="#">Writing Instruments</a>
+                    <a class="dropdown-item" href="#"> Register</a>
+                    <a class="dropdown-item" href="#">Scales</a>
+                    <a class="dropdown-item" href="#"> School Bags</a>
+            
+                </div>
+            </div>
+   
+        </li>
+
+         <!-- dropdown 3 -->
+
+            <div class="dropdown">
+              
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link dropdown-toggle dropdownnav" target="_blank" href="./Sports.html"><i>Sports & toys</i> </a>
+
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Eduacation Types</a>
+                    <a class="dropdown-item" href="#">Sports</a>
+                    <a class="dropdown-item" href="#">Toys</a>
+                </div>
+            </div> 
+             
+        </li>
+       <li class="nav-item">
+
+        <a  class="nav-link" target="_blank" href="./Contact us.html"><i><u>Contact Us</u></i></a>
+
+        </li>
+
+        <li class="nav-item">
+
+          
+
+         <a class="nav-link" target="_blank" href="About us.html"><i><u>About Us</u></i></a>
+
+         
+    </li>
+
+       </ul>
+
+ 
+        <a class="a" href=""><img style="height: 50px; width: 50px; margin-left: 30px;" src="../Images/cart logo wi bg.png"></a><button class="btn btn-b" data-bs-toggle="offcanvas" data-bs-target="#demo"><h6>Cart</h6></button>
+
+
+     </div>
+
+   </div> 
+
+   </nav>
+
+
+
+
+                                                         <!-- navbar Cnavas -->
+
+
+ <div class="offcanvas offcanvas-end" id="demo">
+
+  <div class="offcanvas-header">
+
+   <h1 class="offcanvas-title" style="margin-left: 4vw; font-weight: 800;">Cart Collection</h1>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+
+  </div>
+
+  <div class="offcanvas-body">
+
+   <div class="row">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 1.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 2.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+
+   <div class="row mt-4">
+ 
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 3.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 4.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+
+   <div class="row mt-4">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 5.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 6.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+
+   <div class="row mt-4">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 7.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 8.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+   </div>
+
+
+   
+   <div class="row mt-4">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 9.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 10.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+   </div>
+  
+  
+  
+
+   <button type="button" class="btn btn-warning" data-bs-dismiss="offcanvas">offcanvas </button>
+
+ 
+
+
+</div>                                                         
+
+
+
+
+
+                                   <!-- UNIVERSAL STATIONARY -->
+
+
+
+   <div class="container-fluid SS"><br><br><br>
+
+      <p style="margin-top: 35vh; text-align: center; font-size: 41px; font-family:'Cinzel'; font-weight:600;">UNIVERSAL-<span style="color:goldenrod; text-shadow: none; font-weight:600;">STATIONARY</span></p> 
+        
+  
+      <p class="lead" style="text-align: center;">Look the Amazing Stationary & Attractive Templates</p>
+
+      <div class="container"><a href="https://stationers.pk/" target="_blank"><button class="btn btnUS btn-C"></button></a></div>
+  
+   </div>                                          
+  
+
+
+
+
+   
+                                        <!-- carousel section -->
+
+
+   
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+   <div class="carousel-indicators">
+
+     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+     
+   </div>
+
+
+<div class="carousel-inner">
+
+  <div class="carousel-item active">
+
+   
+    <img class="img-fluid" style="cursor: pointer;" src="../Images/carousel img 1.jpg" alt="">
+
+  </div>
+
+
+  <div class="carousel-item">
+
+   <img class="Cimg2 img-fluid" style="cursor: pointer;" src="../Images/carousel img 2.jpg" alt="">
+
+  </div>
+
+
+</div>
+
+
+
+ <button class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+
+               <span class="carousel-control-prev-icon"></span>
+ </button>
+
+ <button class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+
+               <span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+
+
+                                              <!-- our collection -->
+
+
+
+<section id="" class="sec1">
+
+  <div class="container">
+
+
+
+    <!-- row 1 -->
+
+
+
+      
+    <h2 class="h2">Our Collection</h2>
+
+
+
+    <div class="row ">
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         
+        <div class="card" style="margin-top: 50px;">
+
+           <img class="cardimg" height="160px"  src="https://stationers.pk/cdn/shop/files/71b4WP3DSfL._AC_SX425.jpg?v=1684819723&width=240" alt="">
+
+           <p class="mt-4">Pencils</p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img  class="cardimg" style="height: 160px;" src="https://stationers.pk/cdn/shop/files/Watercolor-Paintings-Tips.jpg?v=1684748379&width=480" alt=""><br>
+
+            <p class="text-center">Water Color</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/Untitled_design_c7db0a01-cc0a-4168-9676-34506886d0a9.png?v=1709883166&width=176" alt=""><br>
+
+            <p class="text-center">Soft Pastel</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" style="height: 160px;" src="https://stationers.pk/cdn/shop/files/qdnqoahfo8dkwxdcxfbkpnql4xeepxwdxyaopwm1mygbsvn18ah78lnzpoaurpwy.jpg?v=1684744642&width=480" alt=""><br>
+
+            <p class="text-center">Paint brush</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/50ML-Oil-Painting-Single-Aluminum-Tube-Loaded-Students-Art-Creation-Drawing-Special-Multi-color-Odor-Free.jpg?v=1684748223&width=480" alt=""><br>
+
+            <p class="text-center">Artists oil paints</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/MontMarteAcrylicPaintSetMetallicThestationerycompanypk_99f56851-01ec-480e-8a32-4c4ebb70ac96.jpg?v=1684748112&width=480" alt=""><br>
+
+            <p class="text-center">Arcylic Paints Set</p>
+            
+         </div>
+      </div>
+      
+    </div>
+
+
+
+    <!-- row 2 -->
+
+
+
+
+    <div class="row">
+
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+         
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/Mont_Marte_Hard_Sketchbook.jpg?v=1684739322&width=480" alt=""><br>
+
+            <p class="text-center">Sketch Book</p>
+
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" style="height: 160px;" src="https://stationers.pk/cdn/shop/files/spray-paint-cans.jpg?v=1709890278&width=480" alt=""><br>
+
+            <p class="text-center">Spray Paints</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/71bGwiugHpL._AC_SX466.jpg?v=1684820054&width=240" alt=""><br>
+
+            <p class="text-center">Canvas Board</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" style="height: 160px;" src="https://stationers.pk/cdn/shop/files/SchneiderOneBusinessRollerBallPenSinglePiece_4_fe45e58f-1fd3-43d6-bab3-ea0c4bb1ca08.jpg?v=1709890352&width=480" alt=""><br>
+
+            <p class="text-center">Ball Pen</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/Canson-Fine-Art---Mixmedia-Graduatecolor_43d8eba9-e458-46d0-90b9-cb3743980cd5.jpg?v=1684744036&width=480" alt=""><br>
+
+            <p class="text-center">Drawing Pad</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/Simply_Acrylic_Pad.jpg?v=1684736478&width=480" alt=""><br>
+
+            <p class="text-center">Arcylic Pads</p>
+            
+         </div>
+      </div>
+      
+    </div>    
+
+
+
+
+    <!-- row 3 -->
+
+
+
+
+    <div class="row">
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+         
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/deli_cutter_deli_e2043_1_pcs_full02_mem92a94.jpg?v=1684582333&width=480" alt=""><br>
+
+            <p class="text-center">Paper Cutter</p>
+
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" style="height: 160px;" src="https://stationers.pk/cdn/shop/files/51r-Rx4sjEL_1c65c744-9b56-49d4-8518-0372e1357000.jpg?v=1684570294&width=480" alt=""><br>
+
+            <p class="text-center">Desk Organizers</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/Lunch_Boxes.jpg?v=1684749242&width=480" alt=""><br>
+
+            <p class="text-center">Lunch Box</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" style="height: 160px;" src="https://stationers.pk/cdn/shop/files/2_5d6acb4b-c8d3-4ff4-9854-4342386c1708.jpg?v=1684566546&width=480" alt=""><br>
+
+            <p class="text-center">Office Calculator</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/81_vXfTvJyL._AC_UF894_1000_QL80.jpg?v=1709890495&width=480" alt=""><br>
+
+            <p class="text-center">Colored Crepe Paper</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5">
+
+            <img class="cardimg" height="160px" src="https://stationers.pk/cdn/shop/files/6921734990990-1.jpg?v=1685108259&width=480" alt=""><br>
+
+            <p class="text-center">Magnifying Glass</p>
+            
+         </div>
+      </div>
+      
+    </div> 
+    
+    
+
+  </div>
+
+</section><br><br><br>
+
+
+
+
+                                            <!-- Features Collection -->
+
+
+
+     <!-- pencils variety card -->
+ 
+        
+          <!-- row 1 -->
+
+     <!-- card 1 -->
+
+
+
+      <section class="sec2">
+
+         <div class="container ">
+
+            <h2 class="featuredh2">Featured collection</h2><br>
+     
+         <div class="row">
+
+            <div class="col-md-6 col-lg-3">
+               <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(228, 201, 167);">
+                   <a href="#">
+                       <img class="card-img-top img-fluid" src="../Images/F card 12.webp" onmouseover="show(this, '../Images/F card 2.webp')" onmouseout="show(this, '../Images/F card 12.webp')" alt="Card image">
+                   </a>
+                   <div class="card-body">
+                       <h3 class="lead" style="font-size: 25px;">Rs.3,350</h3>
+                       <h6 class="card-title" style="font-weight: 400;">Giorgione Artist & Art  Paint Brush</h6>
+                       <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                       <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#Featuresmodal1"></button>
+                   </div>
+               </div>
+           </div>
+             
+
+
+    
+ 
+ 
+           <!-- card 2   -->
+
+
+           <div class="col-md-6 col-lg-3">
+            <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate;background-color: rgb(233, 201, 162);">
+                <a href="#">
+                    <img class="card-img-top img-fluid" src="../Images/F card 3.jpg" onmouseover="show(this, '../Images/F card 1.webp')" onmouseout="show(this, '../Images/../Images/F card 3.jpg')" alt="Card image">
+                </a>
+                <div class="card-body">
+                    <h3 class="lead" style="font-size: 25px;">Rs.4,850</h3>
+                    <h6 class="card-title" style="font-weight: 400;">Mont Marte Signature Detail Brush Set Of 15</h6>
+                    <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                    <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#Featuresmodal2"></button>
+                </div>
+            </div>
+        </div>
+
+
+             
+             
+             <!-- card 3 -->
+
+
+             <div class="col-md-6 col-lg-3">
+               <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+                   <a href="#">
+                       <img class="card-img-top img-fluid" src="../Images/F card 8.webp" onmouseover="show(this, '../Images/F card 5.webp')" onmouseout="show(this, '../Images/F card 8.webp')" alt="Card image">
+                   </a>
+                   <div class="card-body">
+                       <h3 class="lead" style="font-size: 25px;">Rs.1,625</h3>
+                       <h6 class="card-title" style="font-weight: 400;">Mont Marte Graphite Pencil Set of 12</h6>
+                       <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                       <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#Featuresmodal3"></button>
+                   </div>
+               </div>
+           </div>
+             
+
+ 
+ 
+      <!-- card 4 -->
+
+
+      <div class="col-md-6 col-lg-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/F card 6.webp" onmouseover="show(this, '../Images/F card 7.jpg')" onmouseout="show(this, '../Images/F card 6.webp')" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.2,250</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Sakura Gelly Roll Metallic Gel Ink Pen Pack Of 12</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#Featuresmodal4"></button>
+             </div>
+         </div>
+     </div>
+
+
+  
+ 
+ 
+         </div>
+     
+      </div>
+ </section><br><br><br>
+ 
+  
+ 
+ 
+ 
+                                        <!-- card container  -->
+
+
+
+
+ 
+ <div class="container" id="effect-text">
+     <div class="row">
+         <div class="col-lg-4 col-md-6 col-sm-12 ">
+             <div class="card mb-4 card-hover CCcard">
+             <img class="CCimg"  src="https://stationers.pk/cdn/shop/files/pexels-marko-blazevic-1053687_1.jpg?v=1681458376&width=600" height="290px" alt="">
+             <div class="middle">
+                 <div class="text">Art Accessories</div>
+               </div>
+            </div>
+     </div>
+ 
+         <div class="col-lg-4 col-md-6 col-sm-12 ">
+             <div class="card mb-4 card-hover CCcard">
+             <img class="CCimg" src="https://stationers.pk/cdn/shop/files/marcus-urbenz-Ky24fCpz1IE-unsplash.jpg?v=1681458632&width=600" height="290px" alt="">
+             <div class="middle">
+                 <div class="text">Paints & Medium</div>
+               </div>
+         </div>
+     </div>
+ 
+         <div class="col-lg-4 col-md-6 col-sm-12 ">
+             <div class="card mb-4 card-hover CCcard">
+             <img class="CCimg" src="https://stationers.pk/cdn/shop/files/pexels-pavel-danilyuk-8381905.jpg?v=1681460941&width=600"  height="290px" alt="">
+              <div class="middle">
+                 <div class="text">Canvas & Art Sheets</div>
+               </div>
+          </div>
+     </div>
+ 
+         <div class="col-lg-4 col-md-6 col-sm-12 ">
+             <div class="card mb-4 card-hover CCcard">
+             <img class="CCimg" src="https://stationers.pk/cdn/shop/files/pexels-pixabay-207665.jpg?v=1681459104&width=600" alt=""  height="290px">
+              <div class="middle">
+                 <div class="text">Craft & Accessories</div>
+               </div>
+          </div>
+      </div>
+ 
+      <div class="col-lg-4 col-md-6 col-sm-12">
+         <div class="card mb-4 card-hover CCcard">
+         <img class="CCimg" src="https://stationers.pk/cdn/shop/files/pexels-e-olven-8339700.jpg?v=1681461014&width=600" alt=""  height="290px">
+          <div class="middle">
+                 <div class="text">Color Kit</div>
+               </div>
+ 
+        
+      </div>
+  </div>
+ 
+  <div class="col-lg-4 col-md-6 col-sm-12 ">
+     <div class="card mb-4 card-hover CCcard">
+     <img class="CCimg" src="https://stationers.pk/cdn/shop/files/pexels-felicity-tai-7952074-min.jpg?v=1681460642&width=600" alt=""  height="290px">
+      <div class="middle">
+                 <div class="text">Spray Paint</div>
+               </div>
+  </div>
+ </div>
+     </div>
+ </div>
+ <br><br>
+ 
+
+       
+
+                                      <!-- button & simple cards carousel -->
+
+
+
+
+
+ <div class="container p-2">
+
+
+ 
+   <div id="bscard" class="carousel slide" data-bs-ride="carousel">
+
+
+   <div class="carousel-inner">
+
+
+
+       <!-- Mian row  simple image -->
+
+
+    
+    <div class="row">
+
+        <div class="col-lg-4 col-3">
+
+          <div class="card card-group card-hover" style="border-radius: 0px; border: none; 
+          border: 1px solid chocolate; height: 50px;">
+             
+         <img  src="https://stationers.pk/cdn/shop/files/71b4WP3DSfL._AC_SX425.jpg?v=1684819723&width=240" width="600px" height="463px">
+
+         <div class="card-img-overlay">
+         
+                <p class="lead">Explore over Art pencil variety</p> <br>
+
+                <button type="button" class="btn bg-white">Shop Art Pencil</button>
+         </div>
+            
+          </div>
+      </div>
+
+
+
+     <!-- row 1 carousel -->
+    
+      
+                                       
+   <div class="carousel-item active">
+                                       
+      <div class="row Crow">
+   
+           
+        <!-- card 1 -->
+
+
+        <div class="col-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/CBimg 2.webp" onmouseover="show(this, '../Images/CBimg 1.webp')" onmouseout="show(this, '../Images/CBimg 2.webp')" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.600</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Faber Castell Black Matt Graphite Pencil HB 1111 Pack 12</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+
+        <!-- card 2 -->
+
+        <div class="col-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; margin-left: -11vw; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/CBimg 4.webp" onmouseover="show(this, '../Images/CBimg 3.jpg')" onmouseout="show(this, '../Images/CBimg 4.webp')" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.495</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Faber Castell Z Mechanical Pencil 0.5 1pc</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+   
+   
+
+         <!-- card 3 -->
+
+
+         <div class="col-3">
+            <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; margin-left: -21vw; background-color: rgb(233, 201, 162);">
+                <a href="#">
+                    <img class="card-img-top img-fluid" src="../Images/CBimg 6.webp" onmouseover="show(this, '../Images/CBimg 5.webp')" onmouseout="show(this, '../Images/CBimg 6.webp')" alt="Card image">
+                </a>
+                <div class="card-body">
+                    <h3 class="lead" style="font-size: 25px;">Rs.1,525</h3>
+                    <h6 class="card-title" style="font-weight: 400;">Faber Castell TK Fine Mechanical Pencil 1pc</h6>
+                    <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                    <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+                </div>
+            </div>
+        </div>
+   
+   
+   
+   </div>                              
+   
+                                       
+   </div>
+
+
+
+     <!-- Row 2 carousel -->
+
+
+                                       
+                                       
+   <div class="carousel-item">
+                  
+      
+      <div class="row Crow">
+   
+          
+        <!-- card 1 -->
+
+
+        <div class="col-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/CBimg 10.webp" onmouseover="show(this, '../Images/CBimg 9.webp')" onmouseout="show(this, '../Images/CBimg 10.webp')" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.915</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Faber Castell Grip Mechanical Pencil 0.5mm</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+
+        <!-- card 2 -->
+
+        <div class="col-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; margin-left: -11vw; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/CBimg 7.webp" onmouseover="show(this, '../Images/CBimg 8.webp')" onmouseout="show(this, '../Images/CBimg 7.webp')" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.850</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Keep Smiling Art Graphite Pencil Tin Box Set Of 12</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+
+
+          <!-- card 3 -->
+
+
+     
+          <div class="col-3">
+            <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; margin-left: -21vw; background-color: rgb(233, 201, 162);">
+                <a href="#">
+                    <img class="card-img-top img-fluid" src="../Images/CBimg 11.jpg" onmouseover="show(this, '../Images/CBimg 12.webp')" onmouseout="show(this, '../Images/CBimg 11.jpg')" alt="Card image">
+                </a>
+                <div class="card-body">
+                    <h3 class="lead" style="font-size: 25px;">Rs.3,000</h3>
+                    <h6 class="card-title" style="font-weight: 400;">Cretacolor Artist Studio Mega Pencils Neon & Graphite</h6>
+                    <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                    <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+                </div>
+            </div>
+        </div>
+   </div>
+   
+   </div>
+         
+   
+
+     <!-- Row 3 carousel -->
+
+
+   
+   <div class="carousel-item">
+                  
+      
+      <div class="row Crow">
+   
+         
+         <!-- card 1 -->
+
+         <div class="col-3">
+            <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+                <a href="#">
+                    <img class="card-img-top img-fluid" src="../Images/CBimg 15.webp" onmouseover="show(this, './CBimg 16.webp')" onmouseout="show(this, '../Images/CBimg 15.webp')" alt="Card image">
+                </a>
+                <div class="card-body">
+                    <h3 class="lead" style="font-size: 25px;">Rs.2,600</h3>
+                    <h6 class="card-title" style="font-weight: 400;">Faber Castell Black Edition Color Pencils</h6>
+                    <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                    <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- card 2 -->
+
+   
+        <div class="col-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; margin-left: -11vw; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/CBimg 14.jpg" onmouseover="show(this, '../Images/CBimg 13.webp')" onmouseout="show(this, '../Images/CBimg 14.jpg')" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.1,495</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Mont Marte Skin Color Pencils Set Of 12</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+   
+
+        <!-- card 3 -->
+   
+        <div class="col-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width:75%; border: 1px solid chocolate; margin-left: -21vw;background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/CBimg 18.webp" onmouseover="show(this, '../Images/CBimg 17.webp')" onmouseout="show(this, '../Images/CBimg 18.webp')" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.780</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Milan Plasti Pastel Triangular Pencil Crayons Set</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+   
+</div>   
+   
+   </div>
+
+</div>
+
+           
+
+<!-- carousel icons -->
+
+
+      <button class="carousel-control-prev btn-prev" data-bs-target="#bscard" data-bs-slide="prev">
+                                       
+                        <span class="carousel-control-prev-icon"></span>
+      </button>
+                                       
+      <button class="carousel-control-next btn-next" data-bs-target="#bscard" data-bs-slide="next">
+                                       
+                        <span class="carousel-control-next-icon"></span>
+      </button>
+                                       
+   </div>   
+
+   </div>
+
+ </div> <br><br>
+
+ 
+ 
+
+                                             <!-- Explore our latest deals -->
+
+
+
+
+
+
+<section>
+
+   <div class="container">
+
+      <h2 class="h2 mt-5">Explore our Latest deals</h2><br>
+
+
+      <!-- Carousel -->
+
+
+<div id="ELDcard" class="carousel slide" data-bs-ride="carousel">
+
+
+ <div class="carousel-inner">
+
+
+ <!-- Carousel row 1 -->
+
+   
+    <div class="carousel-item active">
+
+
+
+   <!-- card 1 -->
+
+   <div class="row rowexplore">
+
+      <div class="col-md-3">
+         <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="https://stationers.pk/cdn/shop/products/157_99839cec-1fc1-4c8d-a079-edff57240f0a.jpg?v=1679043466&width=1000"  alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.12,200</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Office Desk Accessories Deal No.157</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+
+
+
+
+<!-- card 2 -->
+
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 7.webp" alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.5,700</h3>
+           <h6 class="card-title" style="font-weight: 400;">Parker Gift Set of best Deal No.146</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+
+<!-- card 3 -->
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 8.webp" alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.2,600</h3>
+           <h6 class="card-title" style="font-weight: 400;">Artist Acrylic Deal For Beginners, Deal No.85</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+<!-- card 4 -->
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 9.webp" alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.7,400</h3>
+           <h6 class="card-title" style="font-weight: 400;">Parker Gift Set, of Amazing  Deal No.147</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+
+<!-- card 5 -->
+
+<!-- <div class="col-lg-2">
+   <div class="card card-group card-hover" style="width: 16vw; margin-left: 11vw; border-radius: 0px; border: 1px solid chocolate;">
+       <img style="width: 80%; height: 31.4vh; margin-top: 22px;" src="https://stationers.pk/cdn/shop/products/177_5a20ec58-21f4-44cf-8655-4be04fd858e4.jpg?v=1679135820&width=1000"  alt="">
+
+       <div class="card-body">
+           <h3 class="lead" style="font-size:25px;">Rs.8,700</h3>
+           <h6 class="card-tittle" style="font-weight: 400;">Office Desk Accessories, Deal No.177</h6>
+           <p class="lead" style="font-size:16px;">STATIONARY.PK</p>
+           
+           <button style="margin-top: 2.8vh;"  type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+      </div><br>
+
+   </div>
+</div> -->
+
+</div>
+
+</div>
+
+
+
+   <!-- Carousel row 2  -->
+
+
+
+     <div class="carousel-item">
+
+
+
+   <!-- card 1 -->
+
+   <div class="row rowexplore">
+      <div class="col-md-3 col-sm-6">
+         <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/ELD 1.webp" alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.5,250</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Oil & Acrylic Painting Kit For Artist, Deal No.141</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+
+
+
+<!-- card 2 -->
+
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 2.webp"  alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.4,300</h3>
+           <h6 class="card-title" style="font-weight: 400;">Office Wooden Desk Accessories, Deal No.192</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+
+<!-- card 3 -->
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 3.webp"  alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.8,100</h3>
+           <h6 class="card-title" style="font-weight: 400;">Office Wooden Desk Accessories, Deal No.194</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+
+<!-- card 4 -->
+
+
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 4.webp" alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.6,700</h3>
+           <h6 class="card-title" style="font-weight: 400;">Office Desk Accessories, Deal No.149</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+
+
+
+<!-- card 5 -->
+
+ 
+
+<!-- <div class="col-lg-2">
+   <div class="card card-group card-hover" style="margin-left: 10vw; height: vh; width: 17vw; border-radius: 0px; border: 1px solid chocolate;">
+       <img style="width: 80%; height: 30.3vh; margin-top: 22px;" src../Images/ELD 5.webp"  alt="">
+
+       <div class="card-body">
+           <h3 class="lead" style="font-size:25px;">Rs.5,250</h3>
+           <h6 class="card-tittle" style="font-weight: 400;">Office Wooden Desk Accessories, Deal No.192</h6>
+           <p class="lead" style="font-size:16px;">STATIONARY.PK</p>
+
+           <button style="margin-top: 2.8vh;" type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+
+      </div><br>
+   </div>
+</div> -->
+
+
+
+</div>
+
+</div>
+
+
+
+   <!-- Carousel row 3 -->
+
+
+
+
+     <div class="carousel-item">
+
+
+
+   <!-- card 1 -->
+
+   <div class="row rowexplore">
+
+
+      <div class="col-md-3 col-sm-6">
+         <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+             <a href="#">
+                 <img class="card-img-top img-fluid" src="../Images/ELD 5.webp"  alt="Card image">
+             </a>
+             <div class="card-body">
+                 <h3 class="lead" style="font-size: 25px;">Rs.3,350</h3>
+                 <h6 class="card-title" style="font-weight: 400;">Heat Gun Deals Expensive No.153</h6>
+                 <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                 <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+             </div>
+         </div>
+     </div>
+
+
+
+<!-- card 2 -->
+
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 8.webp" alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.2,600</h3>
+           <h6 class="card-title" style="font-weight: 400;">Artist Acrylic Deal For Beginners, Deal No.85</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+<!-- card 3 -->
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 10.webp" alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.3,650</h3>
+           <h6 class="card-title" style="font-weight: 400;">Acrylic Deal For Artist, Deal No.138</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+<!-- card 4 -->
+
+<div class="col-md-3 col-sm-6">
+   <div class="card card-group card-hover" style="border-radius: 0px; width: 100%; border: 1px solid chocolate; background-color: rgb(233, 201, 162);">
+       <a href="#">
+           <img class="card-img-top img-fluid" src="../Images/ELD 11.webp" alt="Card image">
+       </a>
+       <div class="card-body">
+           <h3 class="lead" style="font-size: 25px;">Rs.2,800</h3>
+           <h6 class="card-title" style="font-weight: 400;">Acrylic & Brush Kit For Artist, Deal No.127</h6>
+           <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+           <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+       </div>
+   </div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+ <!-- Carousel icons -->
+
+
+
+ 
+      <button class="carousel-control-prev btn1-prev" data-bs-target="#ELDcard" data-bs-slide="prev">
+                                       
+                        <span class="carousel-control-prev-icon"></span>
+      </button>
+                                       
+      <button class="carousel-control-next btn1-next" data-bs-target="#ELDcard" data-bs-slide="next">
+                                       
+                        <span class="carousel-control-next-icon"></span>
+      </button>
+         
+</div>
+
+</div>
+
+</div>
+
+</section><br><br><br><br>
+
+
+      
+
+
+
+
+
+                                      <!-- OUR Latest News & Blogs -->
+
+  
+
+                                    
+     
+ <section>
+
+   <div class="container">
+
+      <h2 class="h2">Our Latest News & Blogs</h2><br>
+
+
+      <!-- just 1 row -->
+
+
+      <div class="row">
+
+        
+         <!-- card 1 -->
+
+
+
+        <div class="col-lg-4">
+
+          <div class="card" style="background-color: rgb(233, 201, 162);">
+
+            <img  style="height: 39vh;" src="https://stationers.pk/cdn/shop/articles/CT_1.jpg?v=1716970394&width=700" alt="">
+
+            <div class="card-body">
+
+               <div class="card-tittle" style="text-align: start; margin-top: -2vh; font-size: 15px;">How can kids use craft tape in their projects?</div>
+               <p style="text-align: start; font-weight: 200; font-size: 12px;">May 27,2024</p> 
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card 2 -->
+
+
+        <div class="col-lg-4">
+
+         <div class="card" style="background-color: rgb(233, 201, 162);">
+
+           <img class="Bcimg" style="height: 39vh;" src="https://stationers.pk/cdn/shop/articles/hero-header-scene-template-with-artistic-items.jpg?v=1716970119&width=700" alt="">
+
+
+           <div class="card-body">
+
+            <div class="card-tittle" style="text-align: start; margin-top: -2vh; font-size: 15px;">What Are The Best Watercolor Pads For Beginners?</div>
+            <p style="text-align: start; font-size: 12px; font-weight: 200;">May 26,2024</p> 
+
+         </div>
+
+         </div>
+       </div>
+
+
+       <!-- card 3 -->
+
+
+       <div class="col-lg-4">
+
+         <div class="card" style="background-color: rgb(233, 201, 162);">
+
+           <img class="Bcimg" style="height: 39vh;"  src="https://stationers.pk/cdn/shop/articles/Washi-Tape-Snake-Craft_Large600_ID-882080.jpg?v=1716559193&width=600" alt="">
+
+
+           <div class="card-body">
+
+            <div class="card-tittle" style="text-align: start; margin-top: -2vh; font-size: 15px;">How kids make the most of using washi tapes in crafts?</div>
+            <p style="text-align: start; font-size: 12px; font-weight: 200;">May 24,2024</p> 
+
+         </div>
+
+         </div>
+       </div>
+
+
+
+      </div>
+   </div>
+ </section><br><br>
+
+
+
+
+
+
+                                         <!-- Visit our site (MAP) -->
+
+<section>                                  
+        <div class="container">                                    
+            <h2 class="h2">Visit Our Site</h2><br><br>                                                                     
+            <div class="row">     
+                <div class="col-lg-6">                            
+                    <div class="card">                         
+                        <div id=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115880.59434797117!2d66.94316388120028!3d24.820487351231275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ff07f104431%3A0xd3aa60418b2a2374!2sUnique%20Stationers!5e0!3m2!1sen!2s!4v1721376823060!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>                                  
+                    </div>                                      
+                </div>
+                <div class="col-lg-6">                                     
+                    <div class="card" style="margin-top: 15vh;">
+                        <h3>Contact Information</h3><br>
+                        <p><strong>Address:</strong> Kabeer Lahore, Punjab 54000, Pakistan</p>
+                        <p><strong>Email:</strong> ecommepk@gmail.com</p>
+                        <p><strong>Phone:</strong> 03111222295</p> 
+                    </div>
+                </div>                                        
+            </div>
+        </div>                                       
+    </section>  
+
+
+
+
+                                         
+                                         
+                                         
+                                       
+                                             
+                                           
+                                         
+<!-- <section>                                  
+<div class="container">                                    
+<h2 class="h2">Visit Our Site</h2><br><br>                                                                     
+<div class="row">     
+
+<div class="col-lg-6">                            
+<div class=" card">                         
+<div id="div1" style="height: 60vh; width: 49vw;">
+</div>                                  
+</div>                                      
+</div>
+                                         
+                                       
+<div class="col-lg-6" >                                     
+<div class="card" style="margin-top: 15vh;">
+<h3>Contact Information</h3><br>
+<p ><strong>Address:</strong> Kabeer Lahore, Punjab 54000, Pakistan</p>
+<p ><strong>Email:</strong> ecommepk@gmail.com</p>
+<p ><strong>Phone:</strong> 03111222295</p> 
+</div>
+</div>                                        
+</div>
+</div>                                       
+</section>
+                                          -->
+                                         
+    <br><br><br><br><br><br><br>
+
+
+<div class="container">
+                                                        
+<h2 class="heading h1" style="text-align: center; font-size: 28px;">Premium Quality Staionary item Online in  Pakistan</h2><br>
+<div class="para1">
+<p style="text-align: center; font-size: 14.5px;"><a href="https://Stationers.pk"><strong style="color: red;">Stationers.pk</strong></a> is the leading online stationery items store in Pakistan. Get the finest shopping experience for stationery customers! Our dedication to excellence enters every aspect of our online store, making it simple for you to browse and purchase the best stationery necessities. Stylish desk organizers, modern pens, and notebooks that skillfully combine functionality and style will beautify your place of work. Whether you're a professional looking for innovative equipment or a student releasing your creativity, Stationers.pk has something to offer for everyone. It's a place where style and utility meet, and every purchase you make there represents your dedication to quality.</p><br>
+                                                         
+<h3 style="text-align: center; font-size: 18px;">Top Collections Of Arts ,Office & School Supplies Online</h3>
+<p style="text-align: center; font-size: 14.5px;"><br>We are proud to have an excellart ,office &amp; school supplies and gift collection that can leave a lasting impression. With our user-friendly website, you can browse and place orders with ease, knowing that your preferred paper goods are only a click away. Our online stationery items store meets the various needs of each and every consumer, be they a professional looking for innovative equipment or a student experimenting with creativity. With our wonderful collection, you can improve the atmosphere of the place of work and turn it into a positive place. We also give an experience that reflects your dedication to quality. Experience the world of high-end stationery at its best by exploring, shopping, and engaging yourself.<br></p>
+</div>                                                                                                                                         
+</div>
+<br><br><br>                 
+                                         <!-- FOOTER & cards -->
+                                       
+<div class="container">
+<div class="row mx-auto">
+      <div class="col-md-6 col-lg-3">
+         <div class="card-group ml-8" style="font-size: 14px;">
+                                                  
+            <img   src="https://img.icons8.com/?size=50&id=11942&format=png" width="40px" height="40px" alt="">
+            <h5 class="px-2">Free shipping</h5>
+            <p id="para" class="px-5 ">Shop for Rs 2500 and get free shopping</p>
+         </div>
+                                             
+                                             
+</div>
+
+
+<div class="col-md-6 col-lg-3">
+   <div class="card-group">
+   <a href=""><img src="../Images/satisfy_logo-removebg-preview.png"width="40px" height="40px" alt="satisfy logo.png"></a>
+   <h5 class="px-2">Satisfied or refunded</h5>
+   <p id="para" class="px-5">Get discount when you subscribe to our newslette</p>
+   </div>
+   
+   
+   </div>
+   
+
+<div class="col-md-6 col-lg-3">
+<div class="card-group" style="font-size: 14px;">
+                                                  
+      <img src="../Images/men_icon-removebg-preview.png" width="40px" height="40px" alt="">
+      <h5 class="px-2">Top-notch support</h5>
+      <p id="para" class="px-5">Our support is available 24/7</p>
+   </div>
+                                             
+                                             
+   </div>
+   <div class="col-md-6 col-lg-3">
+      <div class="card-group" style="font-size: 14px;">
+                                                  
+         <img src="../Images/lock_icon-removebg-preview.png" width="40px" height="40px" alt="">
+         <h5 class="px-2">Secure payments</h5>
+         <p id="para" class="px-5">Your payment information is processed securely</p>
+       </div>
+                                             
+                                             
+   </div>
+         </div>
+            </div>
+            <br>
+
+
+                                             <!-- FOOTER -->
+
+
+
+<footer class="footer" style="background-color: #0e3746; color: white;"><br>
+   
+<div class="container">
+   <div class="row" style="font-size: 14px;">
+      <div class="col-md-4 col-lg-3 col-sm-6 ms-5 ms-sm-0 ps-5 ps-sm-0">
+         <div class="card-group"> 
+           <p><strong>ABOUT THE SHOP</strong></p>
+           <p>We offer a diverse selection of stationery, office, and school supplies, as well as gift and packaging products. Our inventory is carefully curated to provide the best quality and value for all your business and personal needs.</p>
+           <p class="Footercol1"><strong>Contact Info</strong></p>
+           <a class="Footercol1" href=""><p><strong>Email:</strong>ecommercestationers.pk@gmail.com</p></a>
+           <a class="Footercol1" href=""><p><strong>Phone:</strong> 03111222295</p></a>
+                                                           
+      </div>
+</div>
+                                                      
+      <div class="col-md-4 col-lg-3 col-sm-6 ms-5 ms-sm-0 ps-5 ps-sm-0">
+         <div class="card-group">
+            <p><strong>COUSTOMER SERVICES</strong></p>
+            <P class="Footercol2">Returns & Exchange</P>
+         </div>
+      </div>
+                                                          
+<div class="col-md-4 col-lg-3 col-sm-6 ms-3 ms-sm-0 ps-5 ps-sm-0">
+<div class="card-group">
+      <ul class="list" style="list-style: none;">
+         <p><strong>MAIN MENU</strong></p>
+
+         <li class="Footercol3">Office Supplies</li>
+         <li class="Footercol3">School Supplies</li>
+         <li class="Footercol3">Sports & toys</li>
+         <li class="Footercol3">Contact Us</li>
+         <li class="Footercol3">About Us</li>
+
+      </ul>
+                                                             
+    </div>
+</div>
+
+<div class="offset-md-8 offset-lg-0 col-md-4 col-lg-3 col-sm-6 ms-5 ms-sm-0 ps-5 ps-sm-0">
+   <div class="card-group">
+      <p><strong>NEWSLETTER</strong></p>
+      <p>Your one stop shop for all your stationery needs</p>
+      <input style="border-radius: 0px;" type="email" class="form-control" placeholder="Enter Your Email" required><br>
+
+
+<button type="submit" class="btn btn-danger" style="margin-top: 10px; border-radius: 0px;">Subscribe</button>
+                                                         
+                                                          
+</div>
+</div>
+   </div> <br><br><br>
+   <div class="container">
+   <p style="margin-left: -1.7vw; margin-top: -9vh; font-size: 17px;">© 2024 stationers.pk <br> <a class="FooterSopify" href="">Powered by Shopify</a></p>
+  
+</div><br><br><br>
+
+
+
+
+               <!-- Social Icons -->
+
+      
+     <div class="Footericons">        
+               
+   <p style="margin-left: -2.6vw;">Follow Us</p>
+
+ <ul style="list-style: none; display: flex; justify-content: end; gap: 16px; ">
+
+   <li class="Fli"><a target="_blank"  href="https://www.facebook.com/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;" src="../Images/FooterFBicon-removebg-preview (1).png" alt=""></a></li>
+
+   <li class="Fli"><a target="_blank" href="https://x.com/home?lang=en"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/Footertwitericon-removebg-preview.png" alt=""></a></li>
+
+   <li class="Fli"><a target="_blank" href="https://www.instagram.com/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/FooterInstaicon-removebg-preview (1).png" alt=""></a></li>
+
+   <li class="Fli"><a target="_blank" href="https://www.tiktok.com/en/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/FooterTIKTOKicon-removebg-preview.png" alt=""></a></li>
+
+   <li class="Fli"><a target="_blank" href="https://www.linkedin.com/notifications/?filter=all"><img style="height: 5.6vh; width: 2.9vw; border-radius: 23px;"  src="../Images/FooterINicon-removebg-preview.png" alt=""></a></li>
+
+ </ul>              
+                                              
+</div><br><br>
+
+             
+</footer>                                         
+
+      
+
+
+
+                                             <!-- FEATURES  COLLLECTION  Modal -->
+
+
+
+
+
+    <!-- card 1 -->
+
+
+
+
+<div class="modal" id="Featuresmodal1">
+
+   <div class="modal-dialog">
+
+      <div class="modal-content">
+
+         <div class="modal-header">
+
+           <img height="120px" width="180px" src="../Images/F modal 1.webp" alt=""><br><p style="margin-left: 4vw; font-size: 28px; font-weight: 500; color: rgb(152, 124, 53);"> <p style="background-color: rgb(219, 190, 116); margin-left: -3vw;">Price: 3,350 <br> <i>Discount <del> 5,000</i></del></p></p> 
+          
+          
+
+           <button class=" btn-close" data-bs-dismiss="modal"></button>
+
+         </div>
+
+         <div class="modal-body">
+
+          <p>
+            Universal<span style="color: goldenrod;">-Stationery</span> <br>   websites provide a digital storefront for traditional and contemporary writing materials, catering to a diverse audience seeking both functional and aesthetic products. These platforms typically feature a modal interface that enhances user experience by presenting information or prompts within a centralized, focused window without navigating away from the main page.</p>
+
+          <div class="row">
+
+            <div class="col-md-2">
+
+          <button style="margin-left: 2vw; background-color: black; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">View Cart</button> 
+
+         </div>
+
+         <div class="col-md-2">
+
+            <button style="background-color: red; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">Check Out</button> 
+  
+           </div>
+
+         </div>
+
+         </div>
+
+
+      </div>
+   </div>
+</div>      
+                                         
+                                         
+                                         
+         <!-- card 2-->
+
+
+
+         <div class="modal" id="Featuresmodal2">
+
+            <div class="modal-dialog">
+         
+               <div class="modal-content">
+         
+                  <div class="modal-header">
+         
+                    <img height="180px" width="180px" src="../Images/F modal 2.webp" alt=""><br><p style="margin-left: 4vw; font-size: 28px; font-weight: 500; color: rgb(152, 124, 53);"> <p style="background-color: rgb(219, 190, 116); margin-left: -3vw;">Price: 3,850<br> <i>Discount <del> 5,000</i></del></p></p> 
+         
+                    <button class=" btn-close" data-bs-dismiss="modal"></button>
+         
+                  </div>
+         
+                  <div class="modal-body">
+         
+                     
+          <p>
+            Universal<span style="color: goldenrod;">-Stationery</span> <br>   websites provide a digital storefront for traditional and contemporary writing materials, catering to a diverse audience seeking both functional and aesthetic products. These platforms typically feature a modal interface that enhances user experience by presenting information or prompts within a centralized, focused window without navigating away from the main page.</p>
+                   <div class="row">
+
+                     <div class="col-md-2">
+         
+                   <button style="margin-left: 2vw; background-color: black; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">View Cart</button> 
+         
+                  </div>
+         
+                  <div class="col-md-2">
+         
+                     <button style="background-color: red; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">Check Out</button> 
+           
+                    </div>
+         
+                  </div>
+         
+                  </div>
+         
+         
+               </div>
+            </div>
+         </div>      
+            
+         
+
+         <!-- card 3 -->
+
+
+
+  <div class="modal" id="Featuresmodal3">
+
+   <div class="modal-dialog">
+
+      <div class="modal-content">
+
+         <div class="modal-header">
+
+           <img height="180px" width="180px" src="../Images/F modal 3.webp" alt=""><br><p style="margin-left: 4vw; font-size: 28px; font-weight: 500; color: rgb(152, 124, 53);"> <p style="background-color: rgb(219, 190, 116); margin-left: -3vw;">Price:1,625<br> <i>Discount <del> 3,000</i></del></p></p> 
+
+           <button class=" btn-close" data-bs-dismiss="modal"></button>
+
+         </div>
+
+         <div class="modal-body">
+
+     
+            
+          <p>
+            Universal<span style="color: goldenrod;">-Stationery</span> <br>   websites provide a digital storefront for traditional and contemporary writing materials, catering to a diverse audience seeking both functional and aesthetic products. These platforms typically feature a modal interface that enhances user experience by presenting information or prompts within a centralized, focused window without navigating away from the main page.</p>
+          <div class="row">
+
+            <div class="col-md-2">
+
+          <button style="margin-left: 2vw; background-color: black; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">View Cart</button> 
+
+         </div>
+
+         <div class="col-md-2">
+
+            <button style="background-color: red; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">Check Out</button> 
+  
+           </div>
+
+         </div>
+
+         </div>
+
+
+      </div>
+   </div>
+</div>      
+            
+
+
+
+        <!-- card 4 -->
+
+        
+
+        <div class="modal" id="Featuresmodal4">
+
+         <div class="modal-dialog">
+      
+            <div class="modal-content">
+      
+               <div class="modal-header">
+      
+                 <img height="180px" width="180px" src="../Images/F modal 4.webp" alt=""><br><p style="margin-left: 4vw; font-size: 28px; font-weight: 500; color: rgb(152, 124, 53);"> <p style="background-color: rgb(219, 190, 116); margin-left: -3vw;">Price: 2,250<br> <i>Discount <del> 4,000</i></del></p></p> 
+      
+                 <button class=" btn-close" data-bs-dismiss="modal"></button>
+      
+               </div>
+      
+               <div class="modal-body">
+      
+                  <p>
+                     Universal<span style="color: goldenrod;">-Stationery</span> <br>   websites provide a digital storefront for traditional and contemporary writing materials, catering to a diverse audience seeking both functional and aesthetic products. These platforms typically feature a modal interface that enhances user experience by presenting information or prompts within a centralized, focused window without navigating away from the main page.</p>
+                <div class="row">
+
+                  <div class="col-md-2">
+      
+                <button style="margin-left: 2vw; background-color: black; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">View Cart</button> 
+      
+               </div>
+      
+               <div class="col-md-2">
+      
+                  <button style="background-color: red; color: white; width: 14vw;" class="btn Fmodalbtn mt-4">Check Out</button> 
+        
+                 </div>
+      
+               </div>
+      
+               </div>
+      
+      
+            </div>
+         </div>
+      </div>   
+
+ <script>
+
+  function show(Object, url){
+
+      Object.src=url;
+  }
+
+               
+
+      // navbar 
+
+
+      function over(Object, url){
+
+       Object.src=url;
+      }
+
+
+
+
+            //    MAP 
+
+
+
+
+            
+
+
+
+ </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script>
+    function geoloc() {
+        if (window.navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showposition);  
+        } else {
+            document.getElementById("div1").innerHTML = "Not supported";   
+        }
+    }
+    
+    function showposition(position) {
+        var lat = position.coords.latitude;    
+        var lon = position.coords.longitude;  
+        var latlon = new google.maps.LatLng(lat, lon);     
+        var mapme = document.getElementById("div1");       
+        var Map = new google.maps.Map(mapme, {
+            center: latlon,
+            zoom: 16
+        }); 
+        var objmarker = {
+            position: latlon,
+            map: Map,
+            title: "You are here!"
+        };  
+        var marker = new google.maps.Marker(objmarker);   
+    }
+    
+    geoloc();
+</script>
+
+
+
+</body>
+</html>

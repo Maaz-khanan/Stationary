@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<style>
+ 
+ /* navbar  */
+
+ .navbar{
+
+
+background-color:rgb(243, 218, 187);
+display: flex;
+justify-content: end;
+padding: 23px;
+size: 10px;
+height: 15vh;      
+}
+
+.navimg{
+
+box-shadow: 24px 6px 28px rgb(202, 161, 132);
+border-radius: 7px;
+}
+
+
+.dropdownnav{
+
+color: rgb(116, 92, 29);
+}
+
+.dropdownnav:hover{
+
+color: rgb(112, 89, 30);
+}
+
+.dropdown-menu{
+
+border: none;
+background-color: rgb(237, 219, 173);
+
+}
+
+.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; 
+  }
+
+
+.dropdown-items{
+
+ color: rgb(236, 236, 235); 
+}    
+
+
+.navbar-nav{
+
+margin-left: 6vw;
+/* gap: -2px; */
+
+}
+
+.nav-item{
+
+color: black;
+font-family: 'kanit';
+font-size: 20px;
+gap: none;
+
+}
+
+                                        /* CANVAS */
+
+
+
+
+                                        .offcanvas{
+
+background: linear-gradient(to left, rgb(230, 193, 149), rgb(243, 218, 187),rgb(218, 183, 140));
+font-family: 'Cinzel';
+
+}
+
+
+
+
+.a{
+
+color: black;
+}
+
+.nav-link{
+    color: #000000;
+}
+
+.btn-b{
+
+color: rgb(101, 70, 15);
+/* background-color: rgb(119, 80, 22); */
+width: 4vw;
+height: 5vh;
+box-shadow: 2px 4px 7px rgb(130, 95, 6);
+
+}
+
+.btn-b:hover{
+
+   color: rgb(78, 58, 9);
+   background-color:rgb(243, 218, 187);
+}
+
+    
+ 
+        /* form button  */
+
+        .btn-C {
+  height: 47px;
+  width: 150px;
+  border: none;
+  font-family: 'kanit';
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border: 0px solid chocolate;
+  
+  
+}
+
+.btn-C:hover {
+  box-shadow: .5px .6px 30px rgb(207, 131, 76);
+}
+
+.btn-C::after {
+  content: "Submit";
+  height: 47px;
+  width: 150px;
+  background-color:rgb(120, 60, 17);
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.0rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-C::before {
+
+  content: 'Submit';
+  height: 50px;
+  width: 150px;
+  background-color: rgb(235, 177, 136);
+  background: linear-gradient(to bottom, rgb(199, 113, 51), rgb(254, 212, 182) );
+  font-size: 24px;
+  color:white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-C:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.btn-C:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+
+    .card-group{
+ 
+         margin-left: -4px;
+        width: 260px;   
+     }
+ 
+     
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Footer */
+ 
+ 
+ 
+ 
+ .FooterSopify{
+ 
+   color: white;
+   margin-top: -8px;
+ }                                          
+ 
+ .FooterSopify:hover{
+ 
+    color: red;
+    transition: 0.6s ease;
+ } 
+ 
+ .Footercol1{
+ 
+    color: white;
+ }
+ 
+ .Footercol1:hover{
+ 
+ color: white;
+ cursor: pointer;
+ }
+ 
+ .Footercol2:hover{
+ 
+    cursor: pointer;
+ }
+ 
+ .Footercol3:hover{
+ 
+ cursor: pointer;
+ }
+ 
+ .Footericons{
+ 
+    margin-left: 70vw;
+    margin-top: -25vh;
+    
+   
+ }
+                                            
+ .FooterLiIcons{
+ 
+   height: 10vh;
+   width: 10vw;
+ } 
+ 
+ .Fli{
+ 
+    transition: transform 0.9s ease;
+ }
+ 
+ .Fli:hover{
+ 
+    transform: scale(1.3);
+ }
+
+
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+button {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+ #bg-image{
+   
+  /* The image used in form background */
+  background-image: url("https://wallpapercave.com/wp/wp6661071.jpg");
+padding: 5px;
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat; 
+   background-size: cover;
+}
+
+  /* form styling */
+
+  .form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: 0;
+  font-size: 17px;
+  color: #000000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #0c0c0c;
+  pointer-events: none;
+  font-weight: 600;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 5px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+                                                                       */
+
+ 
+ 
+ 
+        </style>
+ 
+ 
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+ 
+        <div class="container-fluid">
+     
+          <a href="index.html"> <img class="navimg" style="height: 70px; width: 230px;" src="../Images/Stationary logo.png" alt=""> </a>
+     
+     
+           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-menu" >
+     
+              <span class="navbar-toggler-icon"></span>
+     
+           </button>
+           
+     
+     
+         <div class="collapse navbar-collapse" id="nav-menu">
+     
+            <ul class="navbar-nav">
+     
+             <li class="nav-item">
+     
+     
+     
+               <!-- dropdown 1 -->
+     
+     
+             <div class="dropdown">
+                   
+                 <a style="font-size: 19px; font-weight: 500; color: rgb(117, 82, 36);" class="nav-link dropdown-toggle" href="Office Supplies.html" data-toggle="dropdown"><i>Office Supplies</i></a>
+     
+     
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="Office Supplies.html">Ball Piont</a>
+                         <a class="dropdown-item" href="Office Supplies.html">Binger Clips</a>
+                         <a class="dropdown-item" href="Office Supplies.html">Calculator</a>
+                         <a class="dropdown-item" href="#">Office Dairy</a>
+                         <a class="dropdown-item" href="#">Office Equipment</a>
+                         <a class="dropdown-item" href="#">Scissor</a>
+                         <a class="dropdown-item" href="#">Rubber Band</a>
+                         <a class="dropdown-item" href="#">Sticky Notes</a>
+                         <a class="dropdown-item" href="#">Pen Stand</a>
+                     </div>
+                 </div>
+           
+                 
+                  
+             </li>
+     
+     
+              <!-- dropdown 2 -->
+     
+     
+              
+                 <div class="dropdown">
+                   
+                 <a style="font-size: 19px; font-weight: 500; color: rgb(108, 75, 31);" class="nav-link dropdown-toggle"  href="School Supplies.html" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i>School Supplies</i> </a>
+     
+     
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="School Supplies.html">Black Boards</a>
+                         <a class="dropdown-item" href="School Supplies.html">Clipboard</a>
+                         <a class="dropdown-item" href="School Supplies.html">Chart Papers</a>
+                         <a class="dropdown-item" href="School Supplies.html">cards Flash</a>
+                         <a class="dropdown-item" href="School Supplies.html"> Fluide & Ink Remover</a>
+                         <a class="dropdown-item" href="School Supplies.html"> Glues</a>
+                         <a class="dropdown-item" href="School Supplies.html"> Inks</a>
+                         <a class="dropdown-item" href="School Supplies.html">Notebooks</a>
+                         <a class="dropdown-item" href="School Supplies.html"> Paper Sheets</a>
+                         <a class="dropdown-item" href="School Supplies.html">Writing Instruments</a>
+                         <a class="dropdown-item" href="School Supplies.html"> Register</a>
+                         <a class="dropdown-item" href="School Supplies.html">Scales</a>
+                         <a class="dropdown-item" href="School Supplies.html"> School Bags</a>
+                 
+                     </div>
+                 </div>
+        
+             </li>
+     
+     
+     
+              <!-- dropdown 3 -->
+     
+     
+                 <div class="dropdown">
+                   
+                 <a style="font-size: 19px; font-weight: 500; color: rgb(127, 90, 42);" class="nav-link dropdown-toggle" href="Sports.html" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i>Sports & toys</i> </a>
+     
+     
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="Sports.html">Eduacation Types</a>
+                         <a class="dropdown-item" href="Sports.html">Sports</a>
+                         <a class="dropdown-item" href="Sports.html">Toys</a>
+                     </div>
+                 </div>
+        
+                 
+                  
+             </li>
+     
+            
+     
+            <li class="nav-item">
+     
+             <a  class="nav-link" href="Contact us.html"><i><u>Contact Us</u></i></a>
+     
+             </li>
+     
+             <li class="nav-item">
+     
+               
+     
+              <a class="nav-link" href="aboutus.html"><i><u>About Us</u></i></a>
+     
+              
+         </li>
+     
+            </ul>
+     
+      
+             <a class="a" href=""><img style="height: 50px; width: 50px; margin-left: 30px;" src="../Images/cart logo wi bg.png"></a>
+             <button class="btn btn-b" data-bs-toggle="offcanvas" data-bs-target="#demo"><h6>Cart</h6></button>
+     
+     
+          </div>
+     
+        </div> 
+      </nav>
+
+
+
+
+
+                                                         <!-- navbar Cnavas -->
+
+
+ <div class="offcanvas offcanvas-end" id="demo">
+
+  <div class="offcanvas-header">
+
+   <h1 class="offcanvas-title" style="margin-left: 4vw; font-weight: 800;">Cart Collection</h1>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+
+  </div>
+
+  <div class="offcanvas-body">
+
+   <div class="row">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 1.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 2.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+
+   <div class="row mt-4">
+ 
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 3.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 4.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+
+   <div class="row mt-4">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 5.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 6.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+
+   <div class="row mt-4">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 7.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 8.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+   </div>
+
+
+   
+   <div class="row mt-4">
+
+      <div class="col-lg-2">
+
+        <img style="height: 19vh; width: 12vw;" src="../Images/canvas 9.webp" alt="">
+
+
+         </div>
+      
+
+      <div class="col-lg-2">
+
+         
+             <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 10.webp" alt="">
+         
+      </div>
+
+   </div>
+
+
+   </div>
+  
+  
+  
+
+   <button type="button" class="btn btn-warning" data-bs-dismiss="offcanvas">offcanvas </button>
+
+ 
+
+
+</div>                                                         
+
+
+
+
+
+
+
+
+
+ <!-- img and Form  -->
+
+ <div class="container-fluid-sm p-5 mt-5 " id="bg-image">
+
+    <div class="row">
+     
+
+        <div class=" form col-sm-6 p-4">
+    
+                <h1 style="font-family: 'kanit'; color: rgb(122, 93, 56); text-shadow: 2px 4px 4px grey;">Contact Us</h1>
+
+                <form id="loginForm" onsubmit="validateForm()">
+
+                    <div class="form__group field">  
+                        <input type="text" id="username" name="username" class="form__field" placeholder="Enter your Name" required>
+                         <label class="form__label" for="username">Username:</label>
+                    </div>
+
+                    <div class="form__group field">  
+                        <input type="text" id="email" name="email" class="form__field"placeholder="Enter your Email" required>
+                        <label class="form__label" for="email">Email:</label>
+                   </div>
+
+                   <div class="form__group field">  
+                    <input type="text" id="phonenumber" name="phonenumber" class="form__field"placeholder="Enter your phonenumber" required>
+                    <label class="form__label" for="phonenumber">Phone Number:</label>
+               </div>
+
+
+
+                    <div class="form__group field">  
+                        <input type="password" id="password" name="password" class="form__field" placeholder="Enter your password"required>
+                        <label class="form__label" for="password">Password:</label>
+                   </div>
+                    
+                   <div class="form-group">  
+                       <label  for="password" style="font-weight: 700;">Message:</label>
+                       <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                 
+               </div>
+
+                    <button type="submit" class="btn btn-C "></button>
+                  </form> 
+                  
+                 
+            </div>
+       
+
+
+ </div>
+
+</div>
+ <script>
+  
+
+function validateForm() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var phonenumber= document.getElementById('phonenumber').value;
+    
+   
+    var usernameRegex = /^[a-z]{6}$/; 
+    var passwordRegex = /^\d{10}$/;
+    var phonenumberRegex = /^\d{11}$/;
+
+    
+    if (!usernameRegex.test(username)) {
+        alert('Invalid username! Username must contain only lowercase letters, exactly 6 characters long no special characters.');
+        return false; 
+    }
+    
+   
+    if (!passwordRegex.test(password)) {
+        alert('Invalid password! Password must contain at least ten digit ');
+        return false; 
+    }
+
+    if (!phonenumberRegex.test(phonenumber)) {
+        alert('Invalid phonenumber! Phonenumber must contain at least 11 digits ');
+        return false; 
+    }
+    
+    
+    alert('Valid username, phonenumber and password!');
+    return false;
+}
+
+            
+         
+
+
+</script>
+
+
+
+<!-- FOOTER & cards -->
+                                         
+                                         
+                                         
+<div class="container">
+  <div class="row mx-auto">
+        <div class="col-md-6 col-lg-3">
+           <div class="card-group ml-8" style="font-size: 14px;">
+                                                    
+              <img   src="https://img.icons8.com/?size=50&id=11942&format=png" width="40px" height="40px" alt="">
+              <h5 class="px-2">Free shipping</h5>
+              <p id="para" class="px-5 ">Shop for Rs 2500 and get free shopping</p>
+           </div>
+                                               
+                                               
+  </div>
+  
+  
+  <div class="col-md-6 col-lg-3">
+     <div class="card-group">
+     <a href=""><img src="../Images/satisfy_logo-removebg-preview.png"width="40px" height="40px" alt="satisfy logo.png"></a>
+     <h5 class="px-2">Satisfied or refunded</h5>
+     <p id="para" class="px-5">Get discount when you subscribe to our newslette</p>
+     </div>
+     
+     
+     </div>
+     
+  
+  <div class="col-md-6 col-lg-3">
+  <div class="card-group" style="font-size: 14px;">
+                                                    
+        <img src="../Images/men_icon-removebg-preview.png" width="40px" height="40px" alt="">
+        <h5 class="px-2">Top-notch support</h5>
+        <p id="para" class="px-5">Our support is available 24/7</p>
+     </div>
+                                               
+                                               
+     </div>
+     <div class="col-md-6 col-lg-3">
+        <div class="card-group" style="font-size: 14px;">
+                                                    
+           <img src="../Images/lock_icon-removebg-preview.png" width="40px" height="40px" alt="">
+           <h5 class="px-2">Secure payments</h5>
+           <p id="para" class="px-5">Your payment information is processed securely</p>
+         </div>
+                                               
+                                               
+     </div>
+           </div>
+              </div>
+              <br>
+    
+    
+ <!-- FOOTER -->
+    
+    
+    
+    <footer class="footer" style="background-color: #0e3746; color: white;"><br>
+       
+    <div class="container">
+       <div class="row" style="font-size: 14px;">
+          <div class="col-md-3">
+             <div class="card-group"> 
+               <p><strong>ABOUT THE SHOP</strong></p>
+               <p>We offer a diverse selection of stationery, office, and school supplies, as well as gift and packaging products. Our inventory is carefully curated to provide the best quality and value for all your business and personal needs.</p>
+               <p class="Footercol1"><strong>Contact Info</strong></p>
+               <a class="Footercol1" href=""><p><strong>Email:</strong>ecommercestationers.pk@gmail.com</p></a>
+               <a class="Footercol1" href=""><p><strong>Phone:</strong> 03111222295</p></a>
+                                                               
+          </div>
+    </div>
+                                                          
+          <div class="col-md-3">
+             <div class="card-group" style="margin-left: 4vw;">
+                <p><strong>COUSTOMER SERVICES</strong></p>
+                <P class="Footercol2">Returns & Exchange</P>
+             </div>
+          </div>
+                                                              
+    <div class="col-md-3">
+    <div class="card-group">
+          <ul class="list" style="list-style: none; gap: 14px;">
+             <p><strong>MAIN MENU</strong></p>
+    
+             <li class="Footercol3">Office Supplies</li>
+             <li class="Footercol3">School Supplies</li>
+             <li class="Footercol3">Sports & toys</li>
+             <li class="Footercol3">Contact Us</li>
+             <li class="Footercol3">About Us</li>
+    
+          </ul>
+                                                                 
+        </div>
+    </div>
+    
+    
+    <div class="col-md-3">
+       <div class="card-group">
+          <p><strong>NEWSLETTER</strong></p>
+          <p>Your one stop shop for all your stationery needs</p>
+          <input style="border-radius: 0px;" type="email" class="form-control" placeholder="Enter Your Email" required><br>
+    
+    
+    <button type="submit" class="btn btn-danger" style="margin-top: 10px; border-radius: 0px;">Subscribe</button>
+                                                             
+                                                              
+    </div>
+    </div>
+       </div> <br><br><br>
+       <div class="container">
+       <p style="margin-left: -1.7vw; margin-top: -9vh; font-size: 17px;">© 2024 stationers.pk <br> <a class="FooterSopify" href="">Powered by Sopify</a></p>
+      
+    </div><br><br><br>
+    
+    
+     <!-- Social Icons -->
+    
+          
+         <div class="Footericons">        
+                   
+       <p style="margin-left: -2.6vw;">Follow Us</p>
+    
+       <ul style="list-style: none; display: flex; justify-content: end; gap: 16px; ">
+
+        <li class="Fli"><a target="_blank"  href="https://www.facebook.com/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;" src="../Images/FooterFBicon-removebg-preview (1).png" alt=""></a></li>
+     
+        <li class="Fli"><a target="_blank" href="https://x.com/home?lang=en"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/Footertwitericon-removebg-preview.png" alt=""></a></li>
+     
+        <li class="Fli"><a target="_blank" href="https://www.instagram.com/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/FooterInstaicon-removebg-preview (1).png" alt=""></a></li>
+     
+        <li class="Fli"><a target="_blank" href="https://www.tiktok.com/en/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/FooterTIKTOKicon-removebg-preview.png" alt=""></a></li>
+     
+        <li class="Fli"><a target="_blank" href="https://www.linkedin.com/notifications/?filter=all"><img style="height: 5.6vh; width: 2.9vw; border-radius: 23px;"  src="../Images/FooterINicon-removebg-preview.png" alt=""></a></li>
+     
+      </ul>                
+                                                  
+    </div><br><br>
+    
+                 
+          </footer>                                         
+    
+          
+    
+    
+     
+    
+</body>
+
+</html>

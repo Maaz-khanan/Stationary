@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Toys</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=DM+Serif+Text:ital@0;1&family=Lilita+One&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+    <style>
+
+
+body{
+
+    background-color: antiquewhite;
+}
+
+
+
+.navbar{
+
+background-color:rgb(242, 229, 212);
+display: flex;
+justify-content: end;
+padding: 23px;
+size: 10px;
+height: 18vh;      
+}
+
+.navimg{
+
+box-shadow: 24px 6px 28px rgb(202, 161, 132);
+border-radius: 7px;
+}
+
+.dropdown-menu{
+      border: none;
+      background-color: rgb(237, 219, 173);
+      filter: brightness(0.9);
+   
+   }
+
+.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; 
+  }
+
+
+  .navbar-nav{
+      /* padding-left: 15px; */
+      background-color:rgb(242, 229, 212);
+      margin-left: 3vw;
+      /* gap: -2px; */
+   
+   }
+
+.nav-item{
+
+color: black;
+font-family: 'kanit';
+font-size: 20px;
+gap: none;
+
+}
+
+.navshape{
+
+transition: transform 0.4s ease;
+margin-top: -6px;
+margin-left: 7px;
+}
+
+
+.navshape:hover{
+
+ transform: scale(1.8);
+ cursor: pointer;
+}
+
+.a{
+
+color: black;
+}
+                                                     
+
+                                                /* navbar canvas */
+
+
+
+
+.offcanvas{
+
+background: linear-gradient(to left, rgb(230, 193, 149), rgb(243, 218, 187),rgb(218, 183, 140));
+font-family: 'Cinzel';
+
+}
+
+.btn-b{
+
+color: rgb(101, 70, 15);
+/* background-color: rgb(119, 80, 22); */
+width: 4vw;
+height: 5vh;
+box-shadow: 2px 4px 7px rgb(130, 95, 6);
+
+}
+
+
+
+
+
+                                       /* school stationary */
+
+
+
+    .SS{
+
+      background: linear-gradient(to right, rgb(121, 75, 14) , rgb(234, 182, 114), rgb(119, 73, 12));
+        height: 90vh;
+        margin-top: -17vh;
+
+    }        
+    
+    
+                                           
+
+                                            /* our collection */
+
+ .sec1{
+
+margin-top: 15vh;
+} 
+
+.h2{
+
+font-family: 'kanit';
+font-size: 25px;
+margin-left: 6vw;
+font-weight: 400;
+} 
+
+
+.card{
+
+border: none;
+}
+
+.cardimg{
+
+transition: transform 0.4s ease ;
+box-shadow: 2px 3px 7px black;
+}
+
+.cardimg:hover{
+
+  transform:  scale(1.1) ;
+  cursor: pointer;
+}
+
+.Cimg2:hover{
+
+ cursor: pointer;
+}
+
+
+                                         /* different collection */
+
+
+                                         .btn-C {
+  height: 47px;
+  width: 150px;
+  border: none;
+  font-family: 'kanit';
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border: 0px solid chocolate;
+  
+}
+
+.btn-C:hover {
+  box-shadow: .5px .6px 30px rgb(207, 131, 76);
+}
+
+.btn-C::after {
+  content: "Add to Cart";
+  height: 47px;
+  width: 150px;
+  background-color:rgb(120, 60, 17);
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.0rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-C::before {
+
+  content: 'CART';
+  height: 50px;
+  width: 150px;
+  background-color: rgb(235, 177, 136);
+  background: linear-gradient(to bottom, rgb(199, 113, 51), rgb(254, 212, 182) );
+  font-size: 24px;
+  color:white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-C:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.btn-C:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+} 
+
+
+
+                                               /* paragraph */
+
+
+.hea{
+
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+}                                               
+                               
+.para{
+
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+                                             /* FOOTER */
+
+
+
+                                             .FooterSopify{
+
+color: white;
+margin-top: -8px;
+}                                          
+
+.FooterSopify:hover{
+
+ color: red;
+ transition: 0.6s ease;
+} 
+
+.Footercol1{
+
+ color: white;
+}
+
+.Footercol1:hover{
+
+color: white;
+cursor: pointer;
+}
+
+.Footercol2:hover{
+
+ cursor: pointer;
+}
+
+.Footercol3:hover{
+
+cursor: pointer;
+}
+
+.Footericons{
+
+ margin-left: 70vw;
+ margin-top: -25vh;
+ 
+
+}
+                                         
+.FooterLiIcons{
+
+height: 10vh;
+width: 10vw;
+} 
+
+.Fli{
+
+ transition: transform 0.9s ease;
+}
+
+.Fli:hover{
+
+ transform: scale(1.3);
+}                                             
+
+    </style>
+
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+ 
+        <div class="container-fluid">
+     
+          <a href="index.html" class="navbar-brand"> <img class="navimg" style="height: 70px; width: 230px;" src="../Images/Stationary logo.png" alt=""> </a>
+     
+     
+           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-menu" >
+     
+            <span class="">
+                <img style="width: 30px; height: 30px; display: inline-block;" src="../Images/nav icon.png" alt="">
+             </span>
+     
+           </button>
+           
+     
+     
+         <div class="collapse navbar-collapse" id="nav-menu">
+     
+            <ul class="navbar-nav">
+     
+             <li class="nav-item">
+     
+     
+     
+               <!-- dropdown 1 -->
+     
+     
+             <div class="dropdown">
+                   
+                 <a style="font-size: 19px;" class="nav-link dropdown-toggle dropdownnav" target="_blank" href="./Office Supplies.html"><i>Office Supplies</i></a>
+     
+     
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="#">Ball Piont</a>
+                         <a class="dropdown-item" href="#">Binger Clips</a>
+                         <a class="dropdown-item" href="#">Calculator</a>
+                         <a class="dropdown-item" href="#">Office Dairy</a>
+                         <a class="dropdown-item" href="#">Office Equipment</a>
+                         <a class="dropdown-item" href="#">Scissor</a>
+                         <a class="dropdown-item" href="#">Rubber Band</a>
+                         <a class="dropdown-item" href="#">Sticky Notes</a>
+                         <a class="dropdown-item" href="#">Pen Stand</a>
+                     </div>
+                 </div>
+           
+                 
+                  
+             </li>
+     
+     
+              <!-- dropdown 2 -->
+     
+     
+              
+                 <div class="dropdown">
+                   
+                 <a  href="School Supplies.html" class="nav-link dropdown-toggle dropdownnav" target="_blank" style="font-size: 18px; font-weight: 500;"><i>School Supplies</i> </a>
+     
+         <!-- <a href="./School Supplies.html">ha</a> -->
+                     <div class="dropdown-menu">
+                         <a class="dropdown-item" href="#">Black Boards</a>
+                         <a class="dropdown-item" href="#">Clipboard</a>
+                         <a class="dropdown-item" href="#">Chart Papers</a>
+                         <a class="dropdown-item" href="#">cards Flash</a>
+                         <a class="dropdown-item" href="#"> Fluide & Ink Remover</a>
+                         <a class="dropdown-item" href="#"> Glues</a>
+                         <a class="dropdown-item" href="#"> Inks</a>
+                         <a class="dropdown-item" href="#">Notebooks</a>
+                         <a class="dropdown-item" href="#"> Paper Sheets</a>
+                         <a class="dropdown-item" href="#">Writing Instruments</a>
+                         <a class="dropdown-item" href="#"> Register</a>
+                         <a class="dropdown-item" href="#">Scales</a>
+                         <a class="dropdown-item" href="#"> School Bags</a>
+                 
+                     </div>
+                 </div>
+        
+             </li>
+     
+     
+     
+              <!-- dropdown 3 -->
+     
+     
+                 <div class="dropdown">
+                   
+                 <a style="font-size: 18px; font-weight: 500;" class="nav-link dropdown-toggle dropdownnav" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i>Sports & toys</i> </a>
+     
+     
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="#">Eduacation Types</a>
+                         <a class="dropdown-item" href="#">Sports</a>
+                         <a class="dropdown-item" href="#">Toys</a>
+                     </div>
+                 </div>
+        
+                 
+                  
+             </li>
+     
+            
+     
+            <li class="nav-item">
+     
+             <a  class="nav-link" target="_blank" href="./Contact us.html"><i><u>Contact Us</u></i></a>
+     
+             </li>
+     
+             <li class="nav-item">
+     
+               
+     
+              <a class="nav-link" target="_blank" href="aboutus.html"><i><u>About Us</u></i></a>
+     
+              
+         </li>
+     
+            </ul>
+     
+      
+             <a class="a" href=""><img style="height: 50px; width: 50px; margin-left: 30px;" src="../Images/cart logo wi bg.png"></a><button class="btn btn-b" data-bs-toggle="offcanvas" data-bs-target="#demo"><h6>Cart</h6></button>
+     
+     
+          </div>
+     
+        </div> 
+     
+        </nav>
+
+
+
+
+
+       
+                                                         <!-- navbar Cnavas -->
+
+
+
+
+ <div class="offcanvas offcanvas-end" id="demo">
+
+   <div class="offcanvas-header">
+ 
+    <h1 class="offcanvas-title" style="margin-left: 4vw; font-weight: 800;">Cart Collection</h1>
+   <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+ 
+ 
+   </div>
+ 
+   <div class="offcanvas-body">
+ 
+    <div class="row">
+ 
+       <div class="col-lg-2">
+ 
+         <img style="height: 19vh; width: 12vw;" src="../Images/canvas 1.webp" alt="">
+ 
+ 
+          </div>
+       
+ 
+       <div class="col-lg-2">
+ 
+          
+              <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 2.webp" alt="">
+          
+       </div>
+ 
+    </div>
+ 
+ 
+ 
+    <div class="row mt-4">
+  
+       <div class="col-lg-2">
+ 
+         <img style="height: 19vh; width: 12vw;" src="../Images/canvas 3.webp" alt="">
+ 
+ 
+          </div>
+       
+ 
+       <div class="col-lg-2">
+ 
+          
+              <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 4.webp" alt="">
+          
+       </div>
+ 
+    </div>
+ 
+ 
+ 
+    <div class="row mt-4">
+ 
+       <div class="col-lg-2">
+ 
+         <img style="height: 19vh; width: 12vw;" src="../Images/canvas 5.webp" alt="">
+ 
+ 
+          </div>
+       
+ 
+       <div class="col-lg-2">
+ 
+          
+              <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 6.webp" alt="">
+          
+       </div>
+ 
+    </div>
+ 
+ 
+ 
+    <div class="row mt-4">
+ 
+       <div class="col-lg-2">
+ 
+         <img style="height: 19vh; width: 12vw;" src="../Images/canvas 7.webp" alt="">
+ 
+ 
+          </div>
+       
+ 
+       <div class="col-lg-2">
+ 
+          
+              <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 8.webp" alt="">
+          
+       </div>
+ 
+    </div>
+ 
+ 
+    </div>
+ 
+ 
+    
+    <div class="row mt-4">
+ 
+       <div class="col-lg-2">
+ 
+         <img style="height: 19vh; width: 12vw;" src="../Images/canvas 9.webp" alt="">
+ 
+ 
+          </div>
+       
+ 
+       <div class="col-lg-2">
+ 
+          
+              <img style="height: 19vh; width: 12vw; margin-left: 9vw;" src="../Images/canvas 10.webp" alt="">
+          
+       </div>
+ 
+    </div>
+ 
+ 
+    </div>
+   
+   
+   
+ 
+    <button type="button" class="btn btn-warning" data-bs-dismiss="offcanvas">offcanvas </button>
+ 
+  
+ 
+ 
+ </div>         
+
+
+
+
+
+    
+    
+
+                                           <!--Sports & toys -->
+
+
+
+
+ <div class="container-fluid SS"><br><br><br><br>
+
+    <p style="margin-top: 35vh; text-align: center; font-size: 41px; font-family:'Cinzel'; font-weight:600;text-shadow: 2px 4px 7px rgb(106, 89, 47);">Sports & Toys</p> 
+      
+
+    <p class="lead" style="text-align: center;">Look the Amazing Stationary & Affordable Price</p>
+
+ </div>
+
+
+                                         <!-- our collections  -->
+
+
+
+<section id="" class="sec1">
+
+  <div class="container">
+
+
+
+    <!-- row 1 -->
+
+
+
+      
+    <h2 class="h2">Our Collection</h2>
+
+
+
+    <div class="row">
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         
+         <div class="card" style="margin-left: 6vw; width: 12vw; margin-top: 47px;">
+
+         
+            <img  class="cardimg" src="../Images/Sports 1.webp" alt=""><br>
+
+            <p class="text-center">Leaning Toys</p>
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+            <img  class="cardimg" src="../Images/Sports 2.jpg" alt=""><br>
+
+            <p class="text-center">Kids ACtivities</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+            <img  class="cardimg" src="../Images/Sports 3.jpg" alt=""><br>
+
+            <p class="text-center">Kid Activity Toys</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+            <img class="cardimg" src="../Images/Sports 4.webp" alt=""><br>
+
+            <p class="text-center">Wooden Puzzles Plate</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+            <img  class="cardimg" src="../Images/Sports 5.webp" alt=""><br>
+
+            <p class="text-center">Wooden Toy Clock</p>
+            
+         </div>
+      </div>
+ 
+    </div>
+
+
+
+    <!-- row 2 -->
+
+
+
+
+    <div class="row">
+
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+         
+            <img class="cardimg" src="../Images/Sports 6.webp" alt=""><br>
+
+            <p class="text-center">Wooden By Shapes</p>
+
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+            <img class="cardimg"  src="../Images/Sports 7.webp" alt=""><br>
+
+            <p class="text-center">Baby Activity Desk</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw; ">
+
+            <img class="cardimg" src="../Images/Sports 8.webp" alt=""><br>
+
+            <p class="text-center">Toy Calculation</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+            <img class="cardimg"  src="../Images/Sports 9.webp" alt=""><br>
+
+            <p class="text-center">Wooden Intelligence</p>
+            
+         </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4 col-lg-2  col-12">
+
+         <div class="card mt-5" style="margin-left: 6vw; width: 12vw;">
+
+            <img class="cardimg" src="../Images/Sports 10.webp" alt=""><br>
+
+            <p class="text-center">Wooden Toy Rainbow</p>
+            
+         </div>
+      </div>
+
+
+      
+      
+    </div>    
+  </div>
+
+</section><br>                                          
+ 
+ 
+
+
+                                                  <!-- Learning Toys For Kids -->
+
+                                                  
+
+
+                                                        
+ <section class="sec2 mt-5">
+
+    <div class="container">
+
+       <h2 class="h2">Learning Toys For Kids</h2><br>
+
+       <!-- card 1 -->
+
+    <div class="row">
+
+        <div class=" col-lg-2 col-md-4 col-6">
+            <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+                
+                <a href=""><img class="card-img-top img-fluid"  style="height: 290px; width: 216px;" src="../Images/Sports card 11.webp" onmouseover="show(this, '../Images/Sports card 13.webp')" onmouseout="show(this, '../Images/Sports card 11.webp')" alt="card image"></a>
+
+            
+
+                <div class="card-body">
+                    <h3 class="lead" style="font-size: 25px;">Rs.675</h3>
+                    <h6 class="card-tittle" style="font-weight: 400;">Wooden Toy Abc Blocks 27pcs</h6>
+                    <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                    
+                    <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+               </div>
+            </div>
+        </div>   
+        
+        
+        <!-- card 2 -->
+
+
+
+        <div class=" col-lg-2 col-md-4 col-6">
+            <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+               <a href=""><img class=" fade show"  style="height: 290px; width: 216px;" src="../Images/Sports card 12.webp"></a>
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.1,650</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">Wooden Toy # (723) 133 (Abc)</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div> 
+
+
+
+
+       <!-- card 3 -->
+
+
+       <div class=" col-lg-2 col-md-4 col-6">
+           <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+               <a href=""><img class=" fade show"  style="height: 290px; width: 216px;" src="../Images/Sports card 14.webp"></a>
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.6,100</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">Montessori Metal Insets Tracing Tray</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div> 
+       
+       
+       <!-- card 4 -->
+
+
+
+       <div class=" col-lg-2 col-md-4 col-6">
+           <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+               <a href=""><img class=" fade show"  style="height: 290px; width: 216px;" src="../Images/Sports card 15.webp"></a>
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.6,900</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">Teen & Ten Boards Set with Beads Boxes</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div>             
+
+
+
+       <!-- card 5 -->
+
+
+
+       <div class=" col-lg-2 col-md-4 col-6">
+           <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+               <a href=""><img class=" fade show"  style="height: 290px; width: 216px;" src="../Images/Sports card 16.webp" onmouseover="show(this, '../Images/Sports card 17.webp')" onmouseout="show(this, '../Images/Sports card 16.webp')" alt=""></a>
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.3,400</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">Wooden Stand Red Rods & Numerical Rods</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div>             
+
+
+</div>
+
+</div>
+
+</section><br> <br><br>
+
+
+
+
+
+
+
+<section class="sec2 mt-5">
+
+    <div class="container">
+
+      
+
+       <!-- card 1 -->
+
+    <div class="row">
+
+        <div class=" col-lg-2 col-md-4 col-6">
+            <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+                
+                <a href=""><img class="card-img-top img-fluid"  style="height: 290px; width: 216px;" src="../Images/Sports card 18.webp"></a>
+
+            
+
+                <div class="card-body">
+                    <h3 class="lead" style="font-size: 25px;">Rs.7,000</h3>
+                    <h6 class="card-tittle" style="font-weight: 400;">The Montessori Knobless Cylinders</h6>
+                    <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                    
+                    <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+               </div>
+            </div>
+        </div>   
+        
+        
+        <!-- card 2 -->
+
+
+
+        <div class=" col-lg-2 col-md-4 col-6">
+            <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+               <a href=""><img class="card-img-top img-fluid"  style="height: 290px; width: 216px;" src="../Images/Sports card 19.webp"></a>
+
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.4,400</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">The Montessori Red Rods Lesson Activity</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div> 
+
+
+
+
+       <!-- card 3 -->
+
+
+       <div class=" col-lg-2 col-md-4 col-6">
+           <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+            <a href=""><img class="card-img-top img-fluid"  style="height: 290px; width: 216px;" src="../Images/Sports card 20.webp"></a>
+
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.2,500</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">Montessori Blue Constructive Triangles</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div> 
+       
+       
+       <!-- card 4 -->
+
+
+
+       <div class=" col-lg-2 col-md-4 col-6">
+           <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+            <a href=""><img class="card-img-top img-fluid"  style="height: 290px; width: 216px;" src="../Images/Sports card 21.webp"></a>
+
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.6,200</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">Wooden Educational Toy Montessori Color Tablet</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div>             
+
+
+
+       <!-- card 5 -->
+
+
+
+       <div class=" col-lg-2 col-md-4 col-6">
+           <div class="card card-group card-hover" style="border-radius: 0px; width: 216px; border: 1px solid chocolate; margin-left: 50px;">
+               
+            <a href=""><img class="card-img-top img-fluid"  style="height: 290px; width: 216px;" src="../Images/Sports card 22.webp"></a>
+
+
+               <div class="card-body">
+                   <h3 class="lead" style="font-size: 25px;">Rs.1,500</h3>
+                   <h6 class="card-tittle" style="font-weight: 400;">Wooden Montessori Color Tablet</h6>
+                   <p class="lead" style="font-size:16px; margin-top: 4.6vh;">STATIONARY.PK</p><br>
+                   
+                   <button type="button" class="btn btn-C" data-bs-toggle="modal" data-bs-target="#"></button>
+              </div>
+           </div>
+       </div>             
+
+
+</div>
+
+</div>
+
+</section><br> <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- paragraph -->
+
+
+       <section>
+
+        <div class="container">
+    
+    <p class="hea">Educational Toys for Kids:</p>
+    <p class="para">
+      Welcome to our online store, where fun meets learning for toddlers! Discover a world of engaging and educational toys designed to ignite curiosity and foster development in young minds. From interactive puzzles that enhance problem-solving skills to colorful building blocks that promote creativity and fine motor skills, our collection <br> has something for every little learner. Our toys are not only entertaining but also designed with educational benefits in mind, making them the perfect choice for parents who want their children to have fun while learning valuable skills. Explore our range of kids' learning toys today and give your child the gift of play-based education!
+    </p>
+    
+    <p class="hea" style="font-size: 20px;">Fast Shipping & Cash On Delivery:</p>
+    <p class="para">
+      Enjoy your buying experience with Fast Cash on Delivery Shipping! Stationers.pk combines <br> speed and efficiency to make shopping a satisfying experience.
+    </p>
+    
+    
+    <p class="hea" style="font-weight: 800; font-size: 17px;">Hassle Free Online Shopping:</p>
+    
+    <p class="para">
+
+      Experience effortless online shopping at Stationers.pk, where convenience comes to quality. <br> Browse, click, and receive premium office supplies, stationery, arts & crafts, etc. with ease.</p>
+
+   
+    
+    
+    </div>
+    </section><br><br>
+    
+    
+    
+    
+    
+    
+                                                  <!-- FOOTER cards -->
+    
+    
+    
+  
+<div class="container">
+<div class="row mx-auto">
+      <div class="col-md-6 col-lg-3">
+         <div class="card-group ml-8" style="font-size: 14px;">
+                                                  
+            <img   src="https://img.icons8.com/?size=50&id=11942&format=png" width="40px" height="40px" alt="">
+            <h5 class="px-2">Free shipping</h5>
+            <p id="para" class="px-5 ">Shop for Rs 2500 and get free shopping</p>
+         </div>
+                                             
+                                             
+</div>
+
+
+<div class="col-md-6 col-lg-3">
+   <div class="card-group">
+   <a href=""><img src="../Images/satisfy_logo-removebg-preview.png"width="40px" height="40px" alt="satisfy logo.png"></a>
+   <h5 class="px-2">Satisfied or refunded</h5>
+   <p id="para" class="px-5">Get discount when you subscribe to our newslette</p>
+   </div>
+   
+   
+   </div>
+   
+
+<div class="col-md-6 col-lg-3">
+<div class="card-group" style="font-size: 14px;">
+                                                  
+      <img src="../Images/men_icon-removebg-preview.png" width="40px" height="40px" alt="">
+      <h5 class="px-2">Top-notch support</h5>
+      <p id="para" class="px-5">Our support is available 24/7</p>
+   </div>
+                                             
+                                             
+   </div>
+   <div class="col-md-6 col-lg-3">
+      <div class="card-group" style="font-size: 14px;">
+                                                  
+         <img src="../Images/lock_icon-removebg-preview.png" width="40px" height="40px" alt="">
+         <h5 class="px-2">Secure payments</h5>
+         <p id="para" class="px-5">Your payment information is processed securely</p>
+       </div>
+                                             
+                                             
+   </div>
+         </div>
+            </div>
+            <br>
+
+
+
+
+
+    
+                                                 <!-- FOOTER -->
+    
+    
+    
+                                                 <footer class="footer" style="background-color: #0e3746; color: white;"><br>
+   
+                                                    <div class="container">
+                                                       <div class="row" style="font-size: 14px;">
+                                                          <div class="col-md-4 col-lg-3 col-sm-6 ms-5 ms-sm-0 ps-5 ps-sm-0">
+                                                             <div class="card-group"> 
+                                                               <p><strong>ABOUT THE SHOP</strong></p>
+                                                               <p>We offer a diverse selection of stationery, office, and school supplies, as well as gift and packaging products. Our inventory is carefully curated to provide the best quality and value for all your business and personal needs.</p>
+                                                               <p class="Footercol1"><strong>Contact Info</strong></p>
+                                                               <a class="Footercol1" href=""><p><strong>Email:</strong>ecommercestationers.pk@gmail.com</p></a>
+                                                               <a class="Footercol1" href=""><p><strong>Phone:</strong> 03111222295</p></a>
+                                                                                                               
+                                                          </div>
+                                                    </div>
+                                                                                                          
+                                                          <div class="col-md-4 col-lg-3 col-sm-6 ms-5 ms-sm-0 ps-5 ps-sm-0">
+                                                             <div class="card-group">
+                                                                <p><strong>COUSTOMER SERVICES</strong></p>
+                                                                <P class="Footercol2">Returns & Exchange</P>
+                                                             </div>
+                                                          </div>
+                                                                                                              
+                                                    <div class="col-md-4 col-lg-3 col-sm-6 ms-3 ms-sm-0 ps-5 ps-sm-0">
+                                                    <div class="card-group">
+                                                          <ul class="list" style="list-style: none;">
+                                                             <p><strong>MAIN MENU</strong></p>
+                                                    
+                                                             <li class="Footercol3">Office Supplies</li>
+                                                             <li class="Footercol3">School Supplies</li>
+                                                             <li class="Footercol3">Sports & toys</li>
+                                                             <li class="Footercol3">Contact Us</li>
+                                                             <li class="Footercol3">About Us</li>
+                                                    
+                                                          </ul>
+                                                                                                                 
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="offset-md-8 offset-lg-0 col-md-4 col-lg-3 col-sm-6 ms-5 ms-sm-0 ps-5 ps-sm-0">
+                                                       <div class="card-group">
+                                                          <p><strong>NEWSLETTER</strong></p>
+                                                          <p>Your one stop shop for all your stationery needs</p>
+                                                          <input style="border-radius: 0px;" type="email" class="form-control" placeholder="Enter Your Email" required><br>
+                                                    
+                                                    
+                                                    <button type="submit" class="btn btn-danger" style="margin-top: 10px; border-radius: 0px;">Subscribe</button>
+                                                                                                             
+                                                                                                              
+                                                    </div>
+                                                    </div>
+                                                       </div> <br><br><br>
+                                                       <div class="container">
+                                                       <p style="margin-left: -1.7vw; margin-top: -9vh; font-size: 17px;">© 2024 stationers.pk <br> <a class="FooterSopify" href="">Powered by Shopify</a></p>
+                                                      
+                                                    </div><br><br><br>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                   <!-- Social Icons -->
+                                                    
+                                                          
+                                                         <div class="Footericons">        
+                                                                   
+                                                       <p style="margin-left: -2.6vw;">Follow Us</p>
+                                                    
+                                                     <ul style="list-style: none; display: flex; justify-content: end; gap: 16px; ">
+                                                    
+                                                       <li class="Fli"><a target="_blank"  href="https://www.facebook.com/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;" src="../Images/FooterFBicon-removebg-preview (1).png" alt=""></a></li>
+                                                    
+                                                       <li class="Fli"><a target="_blank" href="https://x.com/home?lang=en"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/Footertwitericon-removebg-preview.png" alt=""></a></li>
+                                                    
+                                                       <li class="Fli"><a target="_blank" href="https://www.instagram.com/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/FooterInstaicon-removebg-preview (1).png" alt=""></a></li>
+                                                    
+                                                       <li class="Fli"><a target="_blank" href="https://www.tiktok.com/en/"><img style="height: 6vh; width: 2.9vw; border-radius: 20px;"  src="../Images/FooterTIKTOKicon-removebg-preview.png" alt=""></a></li>
+                                                    
+                                                       <li class="Fli"><a target="_blank" href="https://www.linkedin.com/notifications/?filter=all"><img style="height: 5.6vh; width: 2.9vw; border-radius: 23px;"  src="../Images/FooterINicon-removebg-preview.png" alt=""></a></li>
+                                                    
+                                                     </ul>              
+                                                                                                  
+                                                    </div><br><br>
+                                                    
+                                                                 
+                                                                                </footer>                                              
+    
+
+            
+                                                                                
+
+
+
+           <script>
+
+
+
+
+    function show(Object, url){
+
+        Object.src=url;
+     }
+
+
+
+
+
+
+
+
+
+           </script>                                                                     
+
+
+
+</body>
+</html>
